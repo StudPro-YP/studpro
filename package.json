@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format-write": "biome format --write ./src"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -19,6 +20,7 @@
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
