@@ -1,6 +1,6 @@
 export const Stats = () => {
     return (
-        <div>
+        <div className="h-screen flex justify-center items-center bg-primary">
             stats
         </div>
     );

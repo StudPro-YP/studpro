@@ -1,6 +1,6 @@
 export const Partners = () => {
     return (
-        <div>
+        <div className="h-screen flex justify-center items-center">
             Partners
         </div>
     );
