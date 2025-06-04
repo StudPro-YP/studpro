@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 @import "uploadthing/tw/v4";
 
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -53,10 +52,10 @@
 	--card-foreground: oklch(0.145 0 0);
 	--popover: oklch(1 0 0);
 	--popover-foreground: oklch(0.145 0 0);
-	--primary: oklch(0.205 0 0);
-	--primary-foreground: oklch(0.985 0 0);
-	--secondary: oklch(0.97 0 0);
-	--secondary-foreground: oklch(0.205 0 0);
+	--primary: #ee7929;
+	--primary-foreground: #000000;
+	--secondary: #065e86;
+	--secondary-foreground: #000000;
 	--muted: oklch(0.97 0 0);
 	--muted-foreground: oklch(0.556 0 0);
 	--accent: oklch(0.97 0 0);
