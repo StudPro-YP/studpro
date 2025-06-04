@@ -4,20 +4,21 @@ import Link from "next/link";
 import { events } from "@/data/events";
 import { Card } from "@/components/ui/card";
 
-export default async function EventPage({ params }: { params: { version: string; title: string } }) {
+export default async function EventPage(props: { params: Promise<{ version: string; title: string }> }) {
+  const params = await props.params;
   // URL decode the title parameter - using await to make this a Server Component
   const decodedTitle = decodeURIComponent(params.title);
-  
+
   // Find the event version by replacing spaces with hyphens to match URL format
   const eventVersion = events.find(event => 
     event.version.replace(/\s+/g, "-") === params.version
   );
-  
+
   // Find the specific session
   const session = eventVersion?.sessions.find(session => 
     session.title === decodedTitle
   );
-  
+
   // If session is not found, return 404
   if (!session || !eventVersion) {
     return notFound();
