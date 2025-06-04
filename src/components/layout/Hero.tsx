@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export const Hero = () => {
     return (
-        <main className="flex flex-col gap-[32px] items-center justify-center row-start-2  sm:items-start h-screen bg-secondary text-white">
-            <div className="text-center space-y-4">
-                <h1 className="text-4xl font-bold w-full">StudPro Program</h1>
-                <p className="text-lg max-w-2xl">
-                    Welcome to StudPro - A comprehensive program series designed to advance your skills
-                    in modern web development, emerging technologies, and professional growth.
+        <main className="relative z-0 pt-16 flex flex-col gap-16 justify-center items-center row-start-2 sm:items-start h-screen bg-[url('/images/hero-bg.jpg')] bg-cover bg-center ">
+            <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 to-blue-950/60 z-0" />
+            <div className="relative z-10 text-center mx-auto space-y-4 text-white">
+                <h1 className="text-6xl font-bold drop-shadow-lg">Welcome to StudPro 8.0</h1>
+                <p className="text-lg font-bold max-w-2xl drop-shadow-lg">
+                    Bridging Academia and Industry for Over 7 Years
+                    {/*Photo by <a href="https://unsplash.com/@productschool?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Product School</a> on <a href="https://unsplash.com/photos/crowd-of-people-in-building-lobby-nOvIa_x_tfo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/}
                 </p>
             </div>
-
-            <div className="flex gap-4 items-center flex-col sm:flex-row">
+            <div className="relative z-10 flex gap-4 items-center justify-center flex-col sm:flex-row w-full">
                 <Button asChild size="lg">
                     <Link href="/events">
                         View Event Timeline
@@ -24,7 +24,6 @@ export const Hero = () => {
                     </Link>
                 </Button>
             </div>
-
         </main>
     );
 };

@@ -11,10 +11,10 @@ import {Events} from "@/components/layout/Events";
 export default function Home() {
 	return (
 		<LenisWrapper>
-			<div className="sticky top-0 z-50 bg-white">
-				<Header />
+			<div className="relative">
+					<Header />
+					<Hero />
 			</div>
-			<Hero />
 			<WhatWeDo />
 			<Events />
 			<Stats />
