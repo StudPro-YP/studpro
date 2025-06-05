@@ -12,14 +12,12 @@ export default function Home() {
 	return (
 		<LenisWrapper>
 			<div className="relative">
-					<Header />
-					<Hero />
+				<Hero />
 			</div>
 			<WhatWeDo />
 			<Events />
 			<Stats />
 			<Partners />
-			<Footer />
 		</LenisWrapper>
 	);
 }
