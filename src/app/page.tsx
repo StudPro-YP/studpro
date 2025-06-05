@@ -7,6 +7,7 @@ import {Partners} from "@/components/layout/Partners";
 
 import LenisWrapper from "@/components/LenisWrapper";
 import {Events} from "@/components/layout/Events";
+import {Overview} from "@/components/layout/Overview";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 					<Header />
 					<Hero />
 			</div>
+			<Overview />
 			<WhatWeDo />
 			<Events />
 			<Stats />
