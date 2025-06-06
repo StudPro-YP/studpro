@@ -2,8 +2,8 @@ export const Overview = () => {
     return (
         <div className="h-screen bg-secondary flex justify-center">
             <div className="flex flex-row justify-center items-center max-w-4xl gap-16">
-                <div className="flex-1/3 flex flex-col justify-start text-white gap-4 drop-shadow-xl/20">
-                    <h1 className="text-5xl font-bold uppercase ">Introducing StudPro</h1>
+                <div className="flex-1/2 flex flex-col justify-start text-white gap-4 drop-shadow-xl/20">
+                    <h1 className="text-6xl font-bold ">Introducing StudPro</h1>
                     <p>
                         The Ultimate bridge for Undergraduates to Connect with Industry Leaders
                     </p>
