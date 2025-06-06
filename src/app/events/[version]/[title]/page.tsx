@@ -25,8 +25,8 @@ export default async function EventPage(props: { params: Promise<{ version: stri
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-12">
+    <div className="min-h-screen py-32">
+      <div className="max-w-5xl mx-auto px-4">
         {/* Navigation back to events */}
         <div className="mb-8">
           <Link href="/events" className="text-secondary hover:text-primary flex items-center gap-2">
