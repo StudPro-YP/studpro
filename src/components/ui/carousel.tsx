@@ -7,7 +7,7 @@ type CarouselApi = EmblaCarouselType | undefined
 
 type CarouselProps = {
   opts?: EmblaOptionsType
-  plugins?: any[]
+  plugins?: Array<any> // Using Array<any> is more intentional than any[]
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
 }
