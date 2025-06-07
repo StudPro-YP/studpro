@@ -36,7 +36,7 @@ export const events: StudProCommunity[] = [
 				topic: "Introduction to Programming Logic and Algorithms",
 				description:
 					"A foundational session exploring core programming concepts essential for any aspiring developer.",
-				images: ["/images/events/javascript-intro.jpg"], // Using an existing image
+				images: ["/images/events/javascript-intro.jpg", "/images/events/html-css-basics.jpg"], // Using an existing image
 				speaker: {
 					name: "John Anderson",
 					title: "Senior Software Engineer",
