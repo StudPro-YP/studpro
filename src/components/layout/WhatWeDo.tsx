@@ -16,12 +16,9 @@ export const WhatWeDo = () => {
     const rightContentRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
-        const container = containerRef.current;
-        const rightContent = rightContentRef.current;
+        const container = containerRef.current;        const rightContent = rightContentRef.current;        if (!container || !rightContent) return;
 
-        if (!container || !rightContent) return;
-
-        var totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
+        let totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
 
         const pinTrigger = ScrollTrigger.create({
             trigger: container,

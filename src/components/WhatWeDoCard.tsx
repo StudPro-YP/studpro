@@ -4,7 +4,7 @@ import Image from "next/image";
 export interface WhatWeDoItem {
     title: string;
     description: string;
-    image: any
+    image: string
 }
 
 export const WhatWeDoCard = ({title, description, image}: WhatWeDoItem) => {

@@ -4,9 +4,8 @@ export default function EventNotFound() {
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-black mb-4">Event Not Found</h1>
-        <p className="text-secondary mb-8">
-          Sorry, we couldn't find the event you're looking for.
+        <h1 className="text-4xl font-bold text-black mb-4">Event Not Found</h1>        <p className="text-secondary mb-8">
+          Sorry, we couldn&apos;t find the event you&apos;re looking for.
         </p>
         <Link 
           href="/events" 

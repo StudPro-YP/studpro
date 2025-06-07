@@ -1,5 +1,5 @@
 import { EventCard } from "./EventCard";
-import type { StudProCommunity } from "@/data/events";
+import type { StudProCommunity, Session } from "@/data/events";
 
 interface EventTimelineProps {
 	events: StudProCommunity[];
@@ -34,10 +34,9 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 		const month = dateStr.split(" ")[0];
 		return months[month as keyof typeof months] || 0;
 	};
-
-	// Helper function to determine icon type by index
-	const getEventIcon = (index: number) => {
-		// Toggle between star and computer icons
+	// Helper function to determine icon type
+	const getEventIcon = () => {
+		// Icon for events
 		return (
 			<div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center shadow-md">
 				<svg
@@ -69,12 +68,11 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 				{/* Main timeline line */}
 				<div className="absolute left-16 top-8 bottom-0 w-0.5 bg-secondary"></div>
 				{/* Create a flat array of all important dates */}
-				{(() => {
-					const allTimelinePoints: {
+				{(() => {					const allTimelinePoints: {
 						year: number;
 						month: string;
 						isFirstOfYear: boolean;
-						sessions: any[];
+						sessions: Session[];
 						monthIndex: number;
 						version: string;
 						description: string;
@@ -116,19 +114,16 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 					allTimelinePoints.sort((a, b) => {
 						if (a.year !== b.year) return a.year - b.year;
 						return getMonthNumber(a.month) - getMonthNumber(b.month);
-					});
-
-					return (
+					});					return (
 						<div className="ml-16">
-							{allTimelinePoints.map((point, index) => (
+							{allTimelinePoints.map((point) => (
 								<div
 									key={`${point.year}-${point.month}`}
 									className="relative mb-28 last:mb-0"
 								>
-									<div className="flex">
-										{/* Timeline icon */}
+									<div className="flex">{/* Timeline icon */}
 										<div className="absolute -left-5 z-10">
-											{getEventIcon(index)}
+											{getEventIcon()}
 										</div>
 
 										{/* Content section */}
