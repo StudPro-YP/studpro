@@ -1,8 +1,9 @@
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { events } from "@/data/events";
 import { Card } from "@/components/ui/card";
+import { BackButton } from "@/components/ui/back-button";
 
 export default async function EventPage(props: {
 	params: Promise<{ version: string; title: string }>;
@@ -13,13 +14,23 @@ export default async function EventPage(props: {
 
 	// Find the event version by replacing spaces with hyphens to match URL format
 	const eventVersion = events.find(
-		(event) => event.version.replace(/\s+/g, "-") === params.version,
+		(studProVersion) => studProVersion.version.replace(/\s+/g, "-") === params.version,
 	);
 
-	// Find the specific session
-	const session = eventVersion?.sessions.find(
-		(session) => session.title === decodedTitle,
-	);
+	// Find the specific event across all event series
+	let foundEvent;
+	if (eventVersion) {
+		for (const series of eventVersion.eventSeries) {
+			const event = series.events.find(
+				(event) => event.title === decodedTitle
+			);
+			if (event) {
+				foundEvent = event;
+				break;
+			}
+		}
+	}
+	const session = foundEvent;
 
 	// If session is not found, return 404
 	if (!session || !eventVersion) {
@@ -31,24 +42,7 @@ export default async function EventPage(props: {
 			<div className="max-w-5xl mx-auto px-4">
 				{/* Navigation back to events */}
 				<div className="mb-8">
-					<Link
-						href="/events"
-						className="text-secondary hover:text-primary flex items-center gap-2"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							viewBox="0 0 16 16"
-						>
-							<path
-								fillRule="evenodd"
-								d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-							/>
-						</svg>
-						Back to Events
-					</Link>
+					<BackButton/>
 				</div>
 
 				{/* Event header */}

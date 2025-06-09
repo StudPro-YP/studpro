@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { partners } from "@/data/partners";
-import { PartnerCard } from "@/components/PartnerCard";
+import { PartnerCard } from "@/components/partners/PartnerCard";
 
 export const Partners = () => {
 	const currentYear = new Date().getFullYear(); // Current year
@@ -47,8 +47,8 @@ export const Partners = () => {
 			<div className="max-w-6xl mx-auto px-4 w-full">
 				{" "}
 				<div className="text-center mb-16">
-					<h2 className="text-4xl font-bold text-secondary mb-4">
-						FEATURED PARTNERS
+					<h2 className="text-4xl uppercase font-bold text-secondary mb-4">
+						Featured Partners
 					</h2>
 					<p className="text-lg text-gray-600 max-w-2xl mx-auto">
 						StudPro proudly partners with industry leaders to provide students

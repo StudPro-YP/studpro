@@ -1,20 +1,20 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { EventTimeline } from "@/components/EventTimeline";
-import { events } from "@/data/events";
+import { PartnerTimeline } from "@/components/partners/PartnerTimeline";
+import { partners } from "@/data/partners";
 
-export function TabsSwitcher() {
-	// Group events by year and get unique versions
+export function PartnerTabsSwitcher() {
+	// Group partners by year and get unique versions
 	const yearVersionMap: { [key: number]: string } = {};
-	events.forEach((event) => {
-		yearVersionMap[event.year] = event.version;
+	partners.forEach((yearGroup) => {
+		yearVersionMap[yearGroup.year] = yearGroup.version;
 	});
 
-	// Get unique years from events and sort them
-	const uniqueYears = [...new Set(events.map((event) => event.year))].sort(
-		(a, b) => a - b,
-	);
+	// Get unique years from partners and sort them
+	const uniqueYears = [
+		...new Set(partners.map((yearGroup) => yearGroup.year)),
+	].sort((a, b) => a - b);
 
 	return (
 		<div className="w-full">
@@ -25,6 +25,7 @@ export function TabsSwitcher() {
 						gridTemplateColumns: `repeat(${uniqueYears.length}, minmax(0, 1fr))`,
 					}}
 				>
+					{" "}
 					{uniqueYears.map((year) => (
 						<TabsTrigger
 							key={year}
@@ -38,7 +39,7 @@ export function TabsSwitcher() {
 
 				{uniqueYears.map((year) => (
 					<TabsContent key={year} value={year.toString()} className="mt-0">
-						<EventTimeline events={events} selectedYear={year} />
+						<PartnerTimeline partnersByYear={partners} selectedYear={year} />
 					</TabsContent>
 				))}
 			</Tabs>

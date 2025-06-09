@@ -1,5 +1,5 @@
-import LenisWrapper from "@/components/LenisWrapper";
-import { PartnerTabsSwitcher } from "@/components/PartnerTabsSwitcher";
+import LenisWrapper from "@/components/layout/LenisWrapper";
+import { PartnerTabsSwitcher } from "@/components/partners/PartnerTabsSwitcher";
 
 export default function PartnersPage() {
 	return (
