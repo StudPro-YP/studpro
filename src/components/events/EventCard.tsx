@@ -1,22 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import type { Session } from "@/data/events";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+} from "@/components/ui/carousel";
+import type { Event } from "@/data/events";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
+import { CalendarIcon } from "lucide-react";
 
 interface EventCardProps {
-	session: Session;
+	session: Event;
 	version?: string;
 }
 
 export function EventCard({ session, version }: EventCardProps) {
 	const router = useRouter();
 	const autoplayPlugin = useRef(
-		Autoplay({ delay: 4000, stopOnInteraction: false })
+		Autoplay({ delay: 4000, stopOnInteraction: false }),
 	);
-	
+
 	// Get version from context if not provided directly
 	const getVersionSlug = () => {
 		if (version) {
@@ -24,7 +29,7 @@ export function EventCard({ session, version }: EventCardProps) {
 		}
 		return "unknown-version";
 	};
-	
+
 	const handleCardClick = () => {
 		const versionSlug = getVersionSlug();
 		const encodedTitle = encodeURIComponent(session.title);
@@ -32,8 +37,8 @@ export function EventCard({ session, version }: EventCardProps) {
 	};
 
 	return (
-		<Card 
-			className="h-full min-w-[370px] transition-all duration-200 hover:shadow-lg hover:scale-[1.02] bg-white cursor-pointer overflow-hidden pt-0" 
+		<Card
+			className="h-full min-w-[370px] transition-all duration-200 hover:shadow-lg hover:scale-[1.02] bg-white cursor-pointer overflow-hidden pt-0"
 			onClick={handleCardClick}
 		>
 			{session.images && session.images.length > 0 && (
@@ -47,7 +52,7 @@ export function EventCard({ session, version }: EventCardProps) {
 							className="object-cover w-full h-full"
 						/>
 					) : (
-						<Carousel 
+						<Carousel
 							opts={{ loop: true }}
 							plugins={[autoplayPlugin.current]}
 							className="h-full"
@@ -70,14 +75,18 @@ export function EventCard({ session, version }: EventCardProps) {
 				</div>
 			)}
 			<CardContent className="px-6">
-				<div className="space-y-4">
-					<div>
-						<h3 className="text-lg font-semibold text-black mb-2">
+				<div className="space-y-4 flex flex-col items-center text-center">
+					<div className="flex flex-col items-center">
+						<h3 className="text-xl uppercase tracking-wider font-semibold text-black mb-2">
 							{session.title}
 						</h3>
 						<p className="text-sm text-secondary leading-relaxed">
 							{session.topic}
 						</p>
+						<div className="flex items-center mt-2 text-xs text-primary">
+							<CalendarIcon className="h-3.5 w-3.5 mr-1" />
+							<span>{session.date}</span>
+						</div>
 						{session.description && (
 							<p className="text-xs text-black/80 mt-2 leading-relaxed">
 								{session.description}
@@ -85,8 +94,8 @@ export function EventCard({ session, version }: EventCardProps) {
 						)}
 					</div>
 
-					<div className="pt-4 border-t border-secondary/20">
-						<div className="space-y-1">
+					<div className="pt-4 border-t border-secondary/20 w-full">
+						<div className="space-y-1 flex flex-col items-center">
 							<p className="font-medium text-black">{session.speaker.name}</p>
 							<p className="text-sm">{session.speaker.title}</p>
 							<p className="text-sm font-medium">{session.speaker.company}</p>
