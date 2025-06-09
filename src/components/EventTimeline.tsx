@@ -68,7 +68,8 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 				{/* Main timeline line */}
 				<div className="absolute left-16 top-8 bottom-0 w-0.5 bg-secondary"></div>
 				{/* Create a flat array of all important dates */}
-				{(() => {					const allTimelinePoints: {
+				{(() => {
+					const allTimelinePoints: {
 						year: number;
 						month: string;
 						isFirstOfYear: boolean;
@@ -114,14 +115,16 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 					allTimelinePoints.sort((a, b) => {
 						if (a.year !== b.year) return a.year - b.year;
 						return getMonthNumber(a.month) - getMonthNumber(b.month);
-					});					return (
+					});
+					return (
 						<div className="ml-16">
 							{allTimelinePoints.map((point) => (
 								<div
 									key={`${point.year}-${point.month}`}
 									className="relative mb-28 last:mb-0"
 								>
-									<div className="flex">{/* Timeline icon */}
+									<div className="flex">
+										{/* Timeline icon */}
 										<div className="absolute -left-5 z-10">
 											{getEventIcon()}
 										</div>
@@ -142,8 +145,8 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 													<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
 														{point.sessions.map((session, sessionIndex) => (
 															<div key={sessionIndex} className="group">
-																<EventCard 
-																	session={session} 
+																<EventCard
+																	session={session}
 																	version={point.version}
 																/>
 															</div>
