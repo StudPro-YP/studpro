@@ -7,7 +7,6 @@ import { WhatWeDoCard } from "@/components/WhatWeDoCard";
 
 import LenisWrapper from "@/components/LenisWrapper";
 
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 export const WhatWeDo = () => {
@@ -15,8 +14,11 @@ export const WhatWeDo = () => {
     const leftContentRef = useRef<HTMLDivElement>(null);
     const rightContentRef = useRef<HTMLDivElement>(null);
 
+    // Two-column layout with pinning effect
     useLayoutEffect(() => {
-        const container = containerRef.current;        const rightContent = rightContentRef.current;        if (!container || !rightContent) return;
+        const container = containerRef.current;
+        const rightContent = rightContentRef.current;
+        if (!container || !rightContent) return;
 
         let totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
 
@@ -42,14 +44,14 @@ export const WhatWeDo = () => {
             e.preventDefault();
         };
         rightContent.addEventListener('wheel', preventScroll, {passive: false});
-        // rightContent.addEventListener('touchmove', preventScroll, { passive: false });
+        rightContent.addEventListener('touchmove', preventScroll as EventListener, { passive: false });
 
         ScrollTrigger.refresh();
 
         return () => {
             pinTrigger.kill();
             rightContent.removeEventListener('wheel', preventScroll);
-            // rightContent.removeEventListener('touchmove', preventScroll);
+            rightContent.removeEventListener('touchmove', preventScroll as EventListener);
         };
     }, []);
 
