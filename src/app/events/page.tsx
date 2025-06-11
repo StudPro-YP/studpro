@@ -1,5 +1,5 @@
-import LenisWrapper from "@/components/LenisWrapper";
-import { TabsSwitcher } from "@/components/TabsSwitcher";
+import LenisWrapper from "@/components/layout/LenisWrapper";
+import { TabsSwitcher } from "@/components/events/TabsSwitcher";
 
 export default function EventsPage() {
 	return (

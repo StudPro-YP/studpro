@@ -1,7 +1,7 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { EventTimeline } from "@/components/EventTimeline";
+import { EventTimeline } from "@/components/events/EventTimeline";
 import { events } from "@/data/events";
 
 export function TabsSwitcher() {

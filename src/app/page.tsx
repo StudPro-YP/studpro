@@ -1,11 +1,11 @@
-import {Hero} from "@/components/layout/Hero";
-import {WhatWeDo} from "@/components/layout/WhatWeDo";
-import {Stats} from "@/components/layout/Stats";
-import {Partners} from "@/components/layout/Partners";
+import { Hero } from "@/components/home/Hero";
+import { WhatWeDo } from "@/components/home/WhatWeDo";
+import { Stats } from "@/components/home/Stats";
+import { Partners } from "@/components/home/Partners";
 
-import LenisWrapper from "@/components/LenisWrapper";
-import {Events} from "@/components/layout/Events";
-import {Overview} from "@/components/layout/Overview";
+import LenisWrapper from "@/components/layout/LenisWrapper";
+import { Events } from "@/components/home/Events";
+import { Overview } from "@/components/home/Overview";
 
 export default function Home() {
 	return (
