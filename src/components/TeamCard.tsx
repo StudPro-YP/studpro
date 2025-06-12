@@ -4,6 +4,7 @@ import Link from "next/link";
 import { TeamMember } from "@/data/team";
 import { Card } from "@/components/ui/card";
 import { Linkedin, Mail, Phone } from "lucide-react";
+import { getSafeTeamImageUrl } from "@/lib/image-utils";
 
 export interface TeamCardProps {
     member: TeamMember;
@@ -11,10 +12,10 @@ export interface TeamCardProps {
 
 export const TeamCard = ({member}: TeamCardProps) => {
     return (
-        <Card className="bg-white hover:bg-gray-100 rounded-lg p-6 m-8 flex flex-col gap-2 items-center w-64 border-none shadow-none">
+        <Card className="bg-white hover:bg-gray-100 rounded-lg py-6 m-8 flex flex-col gap-2 items-center w-64 border-none shadow-none">
             <div className="w-64 h-64 mb-4 relative">
                 <Image
-                    src={member.image || '/images/team/avatar.png'}
+                    src={getSafeTeamImageUrl(`/images/team/${member.name.split(' ')[0].toLowerCase()}.png`)}
                     alt={member.name}
                     fill={true}
                     className="rounded-full object-cover aspect-square"

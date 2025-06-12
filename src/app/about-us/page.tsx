@@ -1,4 +1,4 @@
-import LenisWrapper from "@/components/LenisWrapper";
+import LenisWrapper from "@/components/layout/LenisWrapper";
 import { teamMembers } from "@/data/team";
 import { TeamCard } from "@/components/TeamCard";
 import { Card } from "@/components/ui/card";

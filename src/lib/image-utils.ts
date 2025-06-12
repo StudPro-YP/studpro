@@ -18,3 +18,43 @@ export function getSafeImageUrl(imagePath: string): string {
 		? imagePath
 		: "/images/events/web-development-intro.jpg"; // Use a default image as fallback
 }
+
+//utility function to get a safe image URL for team members
+export function getSafeTeamImageUrl(imagePath?: string): string {
+	// Default image for team members
+	const defaultImage = "/images/team/avatar.png";
+
+	console.debug("[getSafeTeamImageUrl] Called with imagePath:", imagePath);
+
+	// If no image path is provided, return the default image
+	if (!imagePath) {
+		console.debug("[getSafeTeamImageUrl] No imagePath provided, returning defaultImage:", defaultImage);
+		return defaultImage;
+	}
+
+	// List of known team member images that exist in the public directory
+	const knownTeamImages: string[] = [
+	  "/images/team/dayantha.png",
+	  "/images/team/wishma.png",
+	  "/images/team/dilmith.png",
+	  "/images/team/minuri.png",
+	  "/images/team/dilshani.png",
+	  "/images/team/santhush.png",
+	  "/images/team/ashwinie.png",
+	  "/images/team/sandali.png",
+	  "/images/team/tharusha.png",
+	  "/images/team/dasunika.png",
+	  "/images/team/pesandu.png",
+	  "/images/team/sajitha.png",
+	  "/images/team/dasun.png",
+	  "/images/team/gihan.png",
+	];
+
+	const isKnown = knownTeamImages.includes(imagePath);
+	console.debug("[getSafeTeamImageUrl] isKnown:", isKnown, "imagePath:", imagePath);
+
+	// If the image path is in the list of known images, return it; otherwise, return the default image
+	const result = isKnown ? imagePath : defaultImage;
+	console.debug("[getSafeTeamImageUrl] Returning:", result);
+	return result;
+}

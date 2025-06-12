@@ -3,9 +3,9 @@
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { WhatWeDoCard } from "@/components/WhatWeDoCard";
+import { WhatWeDoCard } from '@/components/home/WhatWeDoCard';
 
-import LenisWrapper from "@/components/LenisWrapper";
+import LenisWrapper from "@/components/layout/LenisWrapper";
 
 gsap.registerPlugin(ScrollTrigger);
 
