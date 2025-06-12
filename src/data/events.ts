@@ -36,80 +36,475 @@ export const events: StudProVersion[] = [
 			"StudPro 5.0 introduced students to the fundamentals of web development and programming concepts, laying the foundation for their tech careers.",
 		eventSeries: [
 			{
-				title: "Web Development Fundamentals",
-				description: "Core web development skills and programming fundamentals",
+				title: "Mastering the Art of CV & LinkedIn",
+				description: "Craft your resume and upgrade your LinkedIn to the next level!",
 				events: [
 					{
-						title: "Programming Fundamentals",
-						date: "March 15, 2022",
-						time: "10:00 - 12:30",
-						topic: "Introduction to Programming Logic and Algorithms",
+						title: "Upgrade Your LinkedIn to the Next Level",
+						date: "May 22, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
 						description:
-							"A foundational session exploring core programming concepts essential for any aspiring developer.",
+							"Mr. Amithe Gamage is a Personal Branding Strategist and CEO Coach who has helped over 35000" +
+							"Professionals and Business Owners nurture. With his expertise in LinkedIn Marketing, he will guide you in" +
+							"optimising your digital presence and communicating online consistently with confidence in order to establish" +
+							"your personal brand.",
 						images: [
-							"/images/events/javascript-intro.jpg",
-							"/images/events/html-css-basics.jpg",
+							"/images/events/5.0/upgrade-linkedin.webp",
 						],
 						speaker: {
-							name: "John Anderson",
-							title: "Senior Software Engineer",
-							company: "CodeFoundation",
+							name: "Mr. Amithe Gamage",
+							title: "Co-founder",
+							company: "Quantum Leap (Pvt) Ltd",
 						},
-						venue: "Tech Auditorium, 123 Innovation Street, San Francisco, USA",
+						venue: "Live via Zoom",
 					},
 					{
-						title: "HTML & CSS Basics",
-						date: "May 20, 2022",
-						time: "14:00 - 16:30",
-						topic: "Building Your First Web Pages",
+						title: "Create Your Job Winning CV - Session 1",
+						date: "May 29, 2022",
+						time: "5.00 PM Onwards",
+						topic: "",
 						description:
-							"Learn how to structure web content with HTML and style it with CSS.",
-						images: ["/images/events/html-css-basics.jpg"],
+							"Ms. Zahra Marzook is an expert in Electrical Engineering with 8 years of work experience." +
+							"She is ready to give you the ultimate guidance on achieving a job at Electrical Engineering field with your CV.",
+						images: ["/images/events/5.0/cv-session1.webp"],
 						speaker: {
-							name: "Emily Rodriguez",
-							title: "Frontend Developer",
-							company: "WebCrafters",
+							name: "Ms. Zahra Marzook",
+							title: "Electrical Engineer",
+							company: "Ceylon Electricity Board",
 						},
-						venue: "Digital Learning Center, 456 Web Avenue, Boston, USA",
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Create Your Job Winning CV - Session 2",
+						date: "May 29, 2022",
+						time: "5.00 PM Onwards",
+						topic: "",
+						description:
+							"Mr. Maas Savanghan currently oversees the HR function at attune Lanka - SAP and Technology consulting " +
+							"company owned by MAS holdings. He will share with you the knowledge he has gained through over 18 years of" +
+							"experience in the Human Resources field!",
+						images: ["/images/events/5.0/cv-session2.webp"],
+						speaker: {
+							name: "Mr. Maas Savanghan",
+							title: "Global COE Leader",
+							company: "Rizing Lanka",
+						},
+						venue: "Live via Zoom",
 					}
 				]
 			},
 			{
-				title: "Interactive Development",
-				description: "Making websites interactive and managing code",
+				title: "Know Your Industry",
+				description: "Learn how to apply what you learn at your university practically! Learn about the industry essentials" +
+				"directly from industry Experts!",
 				events: [
 					{
-						title: "JavaScript Introduction",
-						date: "July 18, 2022",
-						time: "11:00 - 14:00",
-						topic: "Making Websites Interactive",
+						title: "Telecommunications and Electronics Stream",
+						date: "June 19, 2022",
+						time: "5.00 PM - 6.00 PM",
+						topic: "",
 						description:
-							"Discover how to bring websites to life with JavaScript interactivity.",
-						images: ["/images/events/javascript-intro.jpg"],
+							"An expert in the field of Telecom and Technology, Mr. Anuradha Udunuwara is currently working as a" + 
+							"Senior Enterprise Solutions Architect at Sri Lanka Telecom with 19+ years of industry experience. " +
+							"He is also a guest lecturer at the University of Peradeniya and a faculty at CTO, UK.",
+						images: ["/images/events/5.0/know-your-industry1.webp"],
 						speaker: {
-							name: "Michael Thompson",
-							title: "JavaScript Developer",
-							company: "InteractiveTech",
+							name: "Mr. Anuradha Udunuwara",
+							title: "Senior Enterprise Solutions Architect",
+							company: "Sri Lanka Telecom",
 						},
-						venue: "Code Campus, 789 Script Boulevard, Austin, USA",
+						venue: "Live via Zoom",
 					},
 					{
-						title: "Basic Git & Version Control",
-						date: "September 12, 2022",
-						time: "09:30 - 12:00",
-						topic: "Collaborating with Code",
+						title: "Telecommunications and Electronics Stream",
+						date: "June 19, 2022",
+						time: "5.00 PM - 6.00 PM",
+						topic: "",
 						description:
-							"Learn essential version control skills for team collaboration using Git.",
-						images: ["/images/events/git-version-control.jpg"],
+							"An Application Engineer at Synopsys, an undergraduate of the University of Ruhuna, Mr. Ruchira Lakshan is" + 
+							"also an expert in the fields of Electronics and is highly skilled in PCB Designing, FlatCAM, 3D modelling and much more.",
+						images: ["/images/events/5.0/know-your-industry2.webp"],
 						speaker: {
-							name: "Lisa Chen",
-							title: "DevOps Engineer",
-							company: "VersionControl Inc",
+							name: "Mr. Ruchira Lakshan",
+							title: "Application Engineer",
+							company: "Synopsys",
 						},
-						venue: "Collaboration Hub, 101 Repository Road, Seattle, USA",
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Electrical Stream",
+						date: "June 19, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Mr. Pasan Pethiyagode is a reputed Electrical Design Engineer at Duo Operations Ltd and also a founder of " +
+							"several infamous projects presented by the IEEE Young Professionals, Sri Lanka section. He is willing to " +
+							"contribute his expertise comprising useful pieces of advice on how to get a job in the field of Electrical Engineering.",
+						images: ["/images/events/5.0/know-your-industry3.webp"],
+						speaker: {
+							name: "Mr. Pasan Pethiyagode",
+							title: "Electrical Design Engineer",
+							company: "Duo Operations Ltd",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Computer Science Stream",
+						date: "June 26, 2022",
+						time: "5.00 PM - 6.00 PM",
+						topic: "",
+						description:
+							"Mr. Yohan Gunathilaka will be joining us with 'Know Your Industry' on the 26th of June to tell you " +
+							"everything you need to know in order to bridge your knowledge gap before entering the IT industry.",
+						images: ["/images/events/5.0/know-your-industry4.webp"],
+						speaker: {
+							name: "Mr. Yohan Gunathilaka",
+							title: "Senior Tech Lead",
+							company: "99x",
+						},
+						venue: "Live via Zoom",
 					}
 				]
-			}
+			},
+			{
+				title: "Know Your Niche",
+				description: "Know nothing about the industry you will be stepping into? This is a session series exclusively for you!",
+				events: [
+					{
+						title: "Computing Session",
+						date: "July 09, 2022",
+						time: "5.30 PM Onwards",
+						topic: "",
+						description:
+							"Mr. Jehan Wijesinghe is a Tech Entrepreneur, Product Development Specialist, a Startup Coach and a Business " +
+							"Consultant. He currently works at Surge Global and has experience in building innovative products for local and " +
+							"international markets. He also co-founded IgniterSpace in 2016 and was the CEO from 2016-2021.",
+						images: ["/images/events/5.0/know-your-niche1.webp"],
+						speaker: {
+							name: "Mr. Jehan Wijesinghe",
+							title: "Head of Product",
+							company: "Surge Global",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Electrical Session",
+						date: "July 10, 2022",
+						time: "5.00 PM Onwards",
+						topic: "",
+						description:
+							"Mr. E.K.Indranatha is the Chief Electrical Engineer of Distribution Maintenance, at Ceylon Electricity Board. " +
+							"He was a Senior Consultant of the Sounthern Construction, Sripali Construction and some reputed companies in Sri Lanka. ",
+						images: ["/images/events/5.0/know-your-niche2.webp"],
+						speaker: {
+							name: "Mr. E.K.Indranatha",
+							title: "Chief Electrical Engineer",
+							company: "Ceylon Electricity Board",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Telecommunications Session",
+						date: "July 10, 2022",
+						time: "5.30 PM Onwards",
+						topic: "",
+						description:
+							"Mr.Yasitha Harshanath currently serves as Supervisory Engineer - Radio Network Planning at Mobitel Pvt Ltd " +
+							"Sri Lanka. He also has been an active volunteer for IEEE since 2015 and currently serves as the Secretary of IEEE Communications Society Sri Lanka Chapter.",
+						images: ["/images/events/5.0/know-your-niche3.webp"],
+						speaker: {
+							name: "Mr.Yasitha Harshanath",
+							title: "Supervisory Engineer",
+							company: "Mobitel Pvt Ltd Sri Lanka",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Electronics Session",
+						date: "July 10, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Mr. Thilina Bandara is a Senior Consultant at Zone24x7, a Product Owner, a Certified Trainer and a Visiting Lecture. He’s an individual skilled in solution architecture, product management while being a life coach, career coach and trainer.",
+						images: ["/images/events/5.0/know-your-niche4.webp"],
+						speaker: {
+							name: "Mr. Thilina Bandara",
+							title: "Senior Consultant",
+							company: "Zone24x7",
+						},
+						venue: "Live via Zoom",
+					}
+				]
+			},
+			{
+				title: "Groom Yourself",
+				description: "Are you all prepped up to continue on with honing the professional inside you? 'Groom Yourself' organized by " +
+				"the IEEE Young Professionals Sri Lanka!",
+				events: [
+					{
+						title: "Workshop on Personal Grooming",
+						date: "September 15, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Mr. Sampath Soysa is a Senior Executive and Marketing & Business Promotions in Sri Lanka, Maldives and " +
+							"South East Asia. He is a lecturer, a mentor, facilitator on Soft Skills and Leadership Development.",
+						images: ["/images/events/5.0/groom-yourself1.webp"],
+						speaker: {
+							name: "Mr. Sampath Soysa",
+							title: "Head of Marketing",
+							company: "ICBS",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Workshop on Personal Grooming",
+						date: "September 18, 2022",
+						time: "6.30 PM Onwards",
+						topic: "",
+						description:
+							"Ms. Rasini Bandara is an International Wellbeing Consultant at ITF as well as an experienced Visiting Lecturer. " +
+							"She also works as a Psychologist at Mind Heals Pvt Ltd and is skilled in public speaking and personality development coaching.",
+						images: ["/images/events/5.0/groom-yourself2.webp"],
+						speaker: {
+							name: "Ms. Rasini Bandara",
+							title: "International Wellbeing Consultant",
+							company: "ITF",
+						},
+						venue: "Live via Zoom",
+					},
+				]
+			},
+			{
+				title: "Interviews 101",
+				description: "Unveil the true secret behind actually acing your interviews successfully with more tactics and more techniques.",
+				events: [
+					{
+						title: "General Interviews",
+						date: "October 01, 2022",
+						time: "4.00 PM - 5.00 PM",
+						topic: "",
+						description:
+							"Satchin Semage is a professional who has over 5 years of experience in varied industries. Having worked in " +
+							"two multinational organizations as an HR executive and as a pre-sales engineer, he has seen the recruitment " +
+							"cycle in the shoes of a recruiter. Satchin is currently based in Bristol UK following his master's degree in " +
+							"business analytics at the university of Bristol. Before moving to England, he was also a forum member of the " +
+							"SLASSCOM HR forum. He is a Toastmaster and a trainer whose goal is to inspire young professionals to achieve " +
+							"career success in life.",
+						images: ["/images/events/5.0/interviews1.webp"],
+						speaker: {
+							name: "Mr. Sachin Semage",
+							title: "Senior Executive",
+							company: "hSenid Business Solutions",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Technical Interviews",
+						date: "October 02, 2022",
+						time: "6.00 PM - 6.30 PM",
+						topic: "",
+						description:
+							"Tharaka Madushanka is a dedicated leader who is the CEO & the Founder of METHRAX. He is also an Associate " +
+							"Technical lead at 99X and a Visiting Lecturer. He holds a Bachelor’s degree in Information Technology from the University of Moratuwa. ",
+						images: ["/images/events/5.0/interviews2.webp"],
+						speaker: {
+							name: "Mr. Tharaka Madushanka",
+							title: "Founder & CEO",
+							company: "METHRAX",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Technical Interviews",
+						date: "October 02, 2022",
+						time: "6.30 PM - 7.00 PM",
+						topic: "",
+						description:
+							"Mr. Indike Gunathilake is a distinguished professional in the field of Information Technology and " +
+							"Software Engineering. He is the Senior Vice President of Arimac Lanka digital product development company. " +
+							"He has a Bachelor’s degree in Information Technology from the University of Colombo and a Masters degree in " +
+							"Business Administration from the University of Moratuwa.",
+						images: ["/images/events/5.0/interviews3.webp"],
+						speaker: {
+							name: "Mr. Indike Gunathilake",
+							title: "Senior Vice President",
+							company: "Arimac Lanka",
+						},
+						venue: "Live via Zoom",
+					}
+				]
+			},
+			{
+				title: "Know Your Ethics",
+				description: "Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
+				"Your Ethics session is here for the rescue!",
+				events: [
+					{
+						title: "Know Your Ethics",
+						date: "October 23, 2022",
+						time: "6.00 PM - 7.00 PM",
+						topic: "",
+						description:
+							"Zamreen Zarook is a distinguished professional who is a Motivational Speaker and People & Organizational " +
+							"Transformation Specialist. He is the Director of Glinmax Holdings (Pvt) and Tolmark Training & Consulting (Pvt) Ltd " + 
+							"and he also works at the Universal College of Applied & General Studies. He owns a BBA double major in MGMT & MKT , " +
+							"Business Management , Marketing and related support services from Edith Cowan University.",
+						images: ["/images/events/5.0/know-your-ethics.webp"],
+						speaker: {
+							name: "Mr. Zamreen Zarook",
+							title: "Director",
+							company: "Glinmax Holdings (Pvt) Ltd",
+						},
+						venue: "Live via Zoom",
+					},
+				]
+			},
+			{
+				title: "'Ask Me Anything' Series",
+				description: "Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
+				"Your Ethics session is here for the rescue!",
+				events: [
+					{
+						title: "Ask Me Anything",
+						date: "October 25, 2022",
+						time: "11.00 AM Onwards",
+						topic: "",
+						description:
+							"Fortude is a leading global enterprise and digital services company that connects technology solutions to business, " + 
+							"with the vision To build sustainable technology solutions, products and tools that support tracking ESG goals. " +
+							"It is of the largest Infor M3 certified resource bases in the world utilizing Microsoft Dynamics, BI and Analytics " +
+							"Certified resources.",
+						images: ["/images/events/5.0/ask-me-anything3.webp"],
+						speaker: {
+							name: "Fortude Team",
+							title: "",
+							company: "Enterprise and Digital Services Company",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Ask Me Anything",
+						date: "October 26, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Attune, a Rizing Company is a global consultancy that helps the world’s most leading fashion and lifestyle " +
+							"companies transform with SAP technology. attune is a leading SAP partner and collaborator, attune has been " +
+							"extensively involved in SAP offerings for the fashion industry and has a global presence across 8 countries.",
+						images: ["/images/events/5.0/ask-me-anything4.webp"],
+						speaker: {
+							name: "Attune (Rizing) Team",
+							title: "",
+							company: "SAP Consultancy Company",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Ask Me Anything",
+						date: "October 27, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Azend Technologies is a leading enterprise and digital services company with an experienced set of ideators and " +
+							"technologists from diverse industries including fintech, agriculture, automotive, power solutions, industrial " +
+							"engineering, retail, logistics and more. Taking advantage of the latest cloud, IoT, blockchain, and machine " +
+							"learning technologies, Azend Technologies enables businesses to realise their true potential using next-generation " +
+							"digital infrastructure and solutions.",
+						images: ["/images/events/5.0/ask-me-anything1.webp"],
+						speaker: {
+							name: "Azend Technologies Team",
+							title: "",
+							company: "Enterprise and Digital Services Company",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Ask Me Anything",
+						date: "October 28, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"DirectFN Sri Lanka is also known as Mubasher Development Centre is a pioneer in providing world class software " +
+							"solutions to the Financial Service Industry. Targeted in catering micro and macro level organizational and " +
+							"information needs of stock brokerage firms.",
+						images: ["/images/events/5.0/ask-me-anything2.webp"],
+						speaker: {
+							name: "DirectFN Team",
+							title: "",
+							company: "FinTech Services Company",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Ask Me Anything",
+						date: "October 30, 2022",
+						time: "4.00 PM Onwards",
+						topic: "",
+						description:
+							"Different is a group of people from companies like Google, Uber, ThoughtWorks, Sysco LABS, 99x, WSO2 and LSEG " +
+							"Technology who have come together to create a 'digital assistant for your home'. They are in the process of " +
+							"building a multi-billion dollar global tech company, backed by VC funds such as Antler Global and the Australian " +
+							"Commonwealth Bank x15 fund.",
+						images: ["/images/events/5.0/ask-me-anything5.webp"],
+						speaker: {
+							name: "Different Engineering Team",
+							title: "",
+							company: "Global Technology Company",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Ask Me Anything",
+						date: "November 01, 2022",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Dialog Axiata Group, a subsidiary of Axiata Group Berhad (Axiata), operates Sri Lanka’s Leading Quad-Play " +
+							"Connectivity Provider. Dialog Axiata PLC, listed on the Colombo Stock Exchange, supplements its market leading " + 
+							"position in the Mobile Telecommunications sector with a robust footprint and market presence in Sri Lanka’s Fixed " +
+							"Telecommunications, Digital Pay Television, Digital Services, Financial Services, and IT services markets through " +
+							"its subsidiaries, Dialog Broadband Networks (Private) Limited (DBN), Dialog Television (Private) Limited (DTV), " +
+							"Digital Holdings Lanka (Private) Limited, Dialog Finance PLC, and H One (Private) Limited. Dialog Axiata Group is "+
+							"Sri Lanka's largest Foreign Direct Investor (FDI).",
+						images: ["/images/events/5.0/ask-me-anything6.webp"],
+						speaker: {
+							name: "Dialog Axiata Team",
+							title: "",
+							company: "Telecommunications Company",
+						},
+						venue: "Live via Zoom",
+					},
+				]
+			},
+			{
+				title: "A Better Way",
+				description: "Learn the best practices for successful job hunting at our comprehensive workshop, A Better Way!",
+				events: [
+					{
+						title: "A Better Way",
+						date: "January 29, 2023",
+						time: "5.00 PM - 6.00 PM",
+						topic: "",
+						description:
+							"Mohamed Zaharan Liyabdeen is a highly qualified and experienced professional with a strong background in finance " +
+							"and management. He holds an MBA from the University of Colombo, and a Bachelor of Arts in Sustainable Performance " +
+							"Management from Manchester Metropolitan University. He is an Associate Member of the Chartered Institute of "  +
+							"Management Accountants in the United Kingdom. With over 15 years of post-qualification experience, he has a " +
+							"wealth of knowledge in auditing, management consulting, and corporate finance. He has global exposure, having " +
+							"worked in the USA, the United Kingdom, the Middle East, Africa, India, and Sri Lanka. Currently, he is employed " +
+							"as the Head of Finance for a leading conglomerate in Sri Lanka.",
+						images: ["/images/events/5.0/a-better-way.webp"],
+						speaker: {
+							name: "Mr. Zaharan Liyabdeen",
+							title: "Visiting Lecturer",
+							company: "ICBS",
+						},
+						venue: "Live via Zoom",
+					},
+				]
+			},
 		]
 	},
 	{
@@ -119,54 +514,78 @@ export const events: StudProVersion[] = [
 			"StudPro 6.0 focused on foundational skills in modern web development, advanced frameworks and deployment strategies, preparing students for real-world development scenarios.",
 		eventSeries: [
 			{
-				title: "Modern Web Development",
-				description: "Core web technologies and frameworks",
+				title: "Branding Yourself",
+				description: "Branding Yourself is a three-day webinar series designed to equip graduates and undergraduates with essential " +
+				"skills and knowledge to effectively brand themselves for career advancement.",
 				events: [
 					{
-						title: "Introduction to Web Development",
-						date: "March 10, 2023",
-						time: "10:00 - 13:00",
-						topic: "HTML, CSS, and JavaScript Fundamentals",
+						title: "Personal Branding",
+						date: "May 18, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
 						description:
-							"A comprehensive introduction to the core technologies of the web.",
+							"Mr. Aishan Bamunawita, Lead Consultant - Global Talent Acquisition at 99x He describes himself as a talented " +
+							"individual with experience ranging from sourcing talent for companies based out of Europe, North America, and " +
+							"Asia. Currently, he is in the process of expanding the 99x talent base to other parts of the world, and " +
+							"providing career guidance to the community. ",
 						images: [
-							"/images/events/web-development-intro.jpg",
+							"/images/events/6.0/branding-yourself1.webp",
 						],
 						speaker: {
-							name: "Sarah Johnson",
-							title: "Senior Frontend Developer",
-							company: "TechCorp",
+							name: "Mr. Aishan Bamunawita",
+							title: " Lead Consultant - Global Talent Acquisition",
+							company: "99x",
 						},
-						venue: "Digital Innovation Center, 500 Technology Park, Chicago, USA",
+						venue: "Live via Zoom",
 					},
 					{
-						title: "Building Your First React App",
-						date: "May 17, 2023",
-						time: "13:30 - 17:00",
-						topic: "React Components and State Management",
+						title: "Crafting Your LinkedIn Profile",
+						date: "May 20, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
 						description:
-							"Learn to build dynamic user interfaces with React's component architecture.",
-						images: ["/images/events/react-app.jpg"],
+							"Mr. Niresh Samaranayake, Head of people, performance & culture GSDC at CAMMS Are you ready to take your " +
+							"career to new heights? We are thrilled to present an extraordinary session that will transform the way you " +
+							"approach your professional journey. Get ready to meet our exceptional speaker, an industry expert with invaluable insights!",
+						images: ["/images/events/6.0/branding-yourself2.webp"],
 						speaker: {
-							name: "Mike Chen",
-							title: "React Specialist",
-							company: "WebSolutions",
+							name: "Mr. Niresh Samaranayake",
+							title: "Head of People, Performance & Culture GSDC",
+							company: "Cammas",
 						},
-						venue: "Framework Academy, 202 Component Street, Portland, USA",
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Creating a Winning CV",
+						date: "May 27, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Are you prepared to embark on a thrilling journey that will elevate your career to dazzling new heights? " +
+							"We are thrilled to present an extraordinary session that will transform the way you approach your professional " +
+							"journey. Get ready to meet our exceptional speaker, an industry expert with invaluable insights on tailoring " +
+							"your CV to different cultural norms and job expectations in foreign countries.",
+						images: ["/images/events/6.0/branding-yourself3.webp"],
+						speaker: {
+							name: "Mr. Praneeth Peiris",
+							title: "Software Engineering Lead",
+							company: "Trivago (Germany)",
+						},
+						venue: "Live via Zoom",
 					}
 				]
 			},
 			{
-				title: "Career Development",
-				description: "Preparing for a career in tech",
+				title: "Know Your Industry",
+				description: "'Know Your Industry' aimed to provide a comprehensive understanding of the Engineering and Computing domains in Sri Lanka.",
 				events: [
 					{
-						title: "Career Preparation Workshop",
-						date: "July 24, 2023",
-						time: "14:00 - 16:00",
+						title: "Know Your Industry",
+						date: "June 27, 2023",
+						time: "6 PM Onwards",
 						topic: "Resume Building and Interview Skills",
 						description:
-							"Prepare for tech interviews and build an impressive portfolio.",
+							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? ",
 						images: [
 							"/images/events/javascript-intro.jpg",
 						],

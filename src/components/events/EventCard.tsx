@@ -38,17 +38,17 @@ export function EventCard({ session, version }: EventCardProps) {
 
 	return (
 		<Card
-			className="h-full min-w-[370px] transition-all duration-200 hover:shadow-lg hover:scale-[1.02] bg-white cursor-pointer overflow-hidden pt-0"
+			className="h-full w-[350px] transition-all duration-200 hover:shadow-lg hover:scale-[1.02] bg-white cursor-pointer overflow-hidden pt-0"
 			onClick={handleCardClick}
 		>
 			{session.images && session.images.length > 0 && (
-				<div className="w-full h-[250px] relative overflow-hidden">
+				<div className="w-full h-[345px] relative overflow-hidden">
 					{session.images.length === 1 ? (
 						<Image
 							src={session.images[0]}
 							alt={session.title}
-							width={350}
-							height={200}
+							width={310}
+							height={310}
 							className="object-cover w-full h-full"
 						/>
 					) : (
@@ -88,7 +88,7 @@ export function EventCard({ session, version }: EventCardProps) {
 							<span>{session.date}</span>
 						</div>
 						{session.description && (
-							<p className="text-xs text-black/80 mt-2 leading-relaxed">
+							<p className="text-xs text-black/80 mt-2 leading-relaxed line-clamp-3">
 								{session.description}
 							</p>
 						)}
