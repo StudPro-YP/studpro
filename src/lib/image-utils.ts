@@ -34,20 +34,21 @@ export function getSafeTeamImageUrl(imagePath?: string): string {
 
 	// List of known team member images that exist in the public directory
 	const knownTeamImages: string[] = [
-	  "/images/team/dayantha.png",
-	  "/images/team/wishma.png",
-	  "/images/team/dilmith.png",
-	  "/images/team/minuri.png",
-	  "/images/team/dilshani.png",
-	  "/images/team/santhush.png",
-	  "/images/team/ashwinie.png",
-	  "/images/team/sandali.png",
-	  "/images/team/tharusha.png",
-	  "/images/team/dasunika.png",
-	  "/images/team/pesandu.png",
-	  "/images/team/sajitha.png",
-	  "/images/team/dasun.png",
-	  "/images/team/gihan.png",
+		"/images/team/chamod.png",
+		"/images/team/dayantha.png",
+		"/images/team/wishma.png",
+		"/images/team/dilmith.png",
+		"/images/team/minuri.png",
+		"/images/team/dilshani.png",
+		"/images/team/santhush.png",
+		"/images/team/ashwinie.png",
+		"/images/team/sandali.png",
+		"/images/team/tharusha.png",
+		"/images/team/dasunika.png",
+		"/images/team/pesandu.png",
+		"/images/team/sajitha.png",
+		"/images/team/dasun.png",
+		"/images/team/gihan.png",
 	];
 
 	const isKnown = knownTeamImages.includes(imagePath);
