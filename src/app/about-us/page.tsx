@@ -35,7 +35,7 @@ export default function PartnersPage() {
 							<p className=" ">{mission}</p>
 						</Card>
 					</div>
-					<div className="mt-16">
+					<div id="team" className="mt-16">
 						<h1 className="text-3xl font-bold uppercase"> Our Team </h1>
 						<div className="flex flex-wrap justify-center items-center pt-8">
 							{teamMembers.map((member, index) => (

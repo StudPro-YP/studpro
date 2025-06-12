@@ -18,3 +18,29 @@ export function getSafeImageUrl(imagePath: string): string {
 		? imagePath
 		: "/images/events/web-development-intro.jpg"; // Use a default image as fallback
 }
+
+export function getSafeTeamImageUrl(imagePath: string): string {
+	// List of known team images that exist in the public directory
+	const knownTeamImages = [
+		"/images/team/chamod.png",
+		"/images/team/dayantha.png",
+		"/images/team/wishma.png",
+		"/images/team/dilmith.png",
+		"/images/team/minuri.png",
+		"/images/team/dilshani.png",
+		"/images/team/santhush.png",
+		"/images/team/ashwinie.png",
+		"/images/team/sandali.png",
+		"/images/team/tharusha.png",
+		"/images/team/dasunika.png",
+		"/images/team/pesandu.png",
+		"/images/team/sajitha.png",
+		"/images/team/dasun.png",
+		"/images/team/gihan.png",
+	];
+
+	// If the image path is in the list of known team images, return it; otherwise, return a fallback
+	return knownTeamImages.includes(imagePath)
+		? imagePath
+		: "/images/team/avatar.jpg"; // Use a default image as fallback
+}
