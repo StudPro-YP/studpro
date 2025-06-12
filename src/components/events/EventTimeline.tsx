@@ -34,7 +34,7 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 	};
 
 	return (
-		<div className="max-w-6xl mx-auto px-4 py-8">
+		<div className="max-w-7xl mx-auto py-8">
 			{/* Header */}
 			<div className="text-center mb-16">
 				<h1 className="text-4xl font-bold text-black mb-4">
@@ -77,7 +77,7 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 
 											{/* Events in this series */}
 											<div className="ml-8">
-												<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+												<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 													{series.events.map((session, sessionIndex) => (
 														<div key={sessionIndex} className="group">
 															<EventCard
