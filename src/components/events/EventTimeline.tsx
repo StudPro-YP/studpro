@@ -39,7 +39,12 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 			<div className="text-center mb-16">
 				<h1 className="text-4xl font-bold text-black mb-4">
 					<span className="text-primary">Stud</span>
-					<span className="text-secondary me-4">Pro {sortedEvents.map((studproVersion) => studproVersion.version.split('o')[1] )}</span>
+					<span className="text-secondary me-4">
+						Pro{" "}
+						{sortedEvents.map(
+							(studproVersion) => studproVersion.version.split("o")[1],
+						)}
+					</span>
 					EVENTS
 				</h1>
 			</div>
@@ -52,25 +57,30 @@ export function EventTimeline({ events, selectedYear }: EventTimelineProps) {
 							{/* Event Series */}
 							<div className="space-y-12">
 								{studProVersion.eventSeries.map((series, index) => (
-									<div key={`${studProVersion.version}-${series.title}`} className="relative">
+									<div
+										key={`${studProVersion.version}-${series.title}`}
+										className="relative"
+									>
 										{/* Category sidebar with vertical line */}
 										<div className="relative ml-16">
 											{/* Main timeline line */}
 											<div className="absolute left-0 top-8 bottom-0 w-0.5 bg-secondary"></div>
-											
+
 											{/* Category header with icon */}
 											<div className="relative mb-6">
 												{/* Timeline icon */}
 												<div className="absolute -left-5 z-10">
 													{getEventIcon()}
 												</div>
-												
+
 												<div className="ml-8 bg-gradient-to-r from-primary/10 to-secondary/10 p-4 rounded-lg">
 													<h3 className="text-2xl font-semibold text-black">
 														{series.title}
 													</h3>
 													{series.description && (
-														<p className="text-gray-600 text-sm mt-1">{series.description}</p>
+														<p className="text-gray-600 text-sm mt-1">
+															{series.description}
+														</p>
 													)}
 												</div>
 											</div>

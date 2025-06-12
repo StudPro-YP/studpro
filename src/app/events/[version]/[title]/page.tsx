@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { events } from "@/data/events";
@@ -14,16 +13,15 @@ export default async function EventPage(props: {
 
 	// Find the event version by replacing spaces with hyphens to match URL format
 	const eventVersion = events.find(
-		(studProVersion) => studProVersion.version.replace(/\s+/g, "-") === params.version,
+		(studProVersion) =>
+			studProVersion.version.replace(/\s+/g, "-") === params.version,
 	);
 
 	// Find the specific event across all event series
 	let foundEvent;
 	if (eventVersion) {
 		for (const series of eventVersion.eventSeries) {
-			const event = series.events.find(
-				(event) => event.title === decodedTitle
-			);
+			const event = series.events.find((event) => event.title === decodedTitle);
 			if (event) {
 				foundEvent = event;
 				break;
@@ -42,7 +40,7 @@ export default async function EventPage(props: {
 			<div className="max-w-5xl mx-auto px-4">
 				{/* Navigation back to events */}
 				<div className="mb-8">
-					<BackButton/>
+					<BackButton />
 				</div>
 
 				{/* Event header */}

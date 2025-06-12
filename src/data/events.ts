@@ -37,7 +37,8 @@ export const events: StudProVersion[] = [
 		eventSeries: [
 			{
 				title: "Mastering the Art of CV & LinkedIn",
-				description: "Craft your resume and upgrade your LinkedIn to the next level!",
+				description:
+					"Craft your resume and upgrade your LinkedIn to the next level!",
 				events: [
 					{
 						title: "Upgrade Your LinkedIn to the Next Level",
@@ -49,9 +50,7 @@ export const events: StudProVersion[] = [
 							"Professionals and Business Owners nurture. With his expertise in LinkedIn Marketing, he will guide you in" +
 							"optimising your digital presence and communicating online consistently with confidence in order to establish" +
 							"your personal brand.",
-						images: [
-							"/images/events/5.0/upgrade-linkedin.webp",
-						],
+						images: ["/images/events/5.0/upgrade-linkedin.webp"],
 						speaker: {
 							name: "Mr. Amithe Gamage",
 							title: "Co-founder",
@@ -91,13 +90,14 @@ export const events: StudProVersion[] = [
 							company: "Rizing Lanka",
 						},
 						venue: "Live via Zoom",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Know Your Industry",
-				description: "Learn how to apply what you learn at your university practically! Learn about the industry essentials" +
-				"directly from industry Experts!",
+				description:
+					"Learn how to apply what you learn at your university practically! Learn about the industry essentials" +
+					"directly from industry Experts!",
 				events: [
 					{
 						title: "Telecommunications and Electronics Stream",
@@ -105,7 +105,7 @@ export const events: StudProVersion[] = [
 						time: "5.00 PM - 6.00 PM",
 						topic: "",
 						description:
-							"An expert in the field of Telecom and Technology, Mr. Anuradha Udunuwara is currently working as a" + 
+							"An expert in the field of Telecom and Technology, Mr. Anuradha Udunuwara is currently working as a" +
 							"Senior Enterprise Solutions Architect at Sri Lanka Telecom with 19+ years of industry experience. " +
 							"He is also a guest lecturer at the University of Peradeniya and a faculty at CTO, UK.",
 						images: ["/images/events/5.0/know-your-industry1.webp"],
@@ -122,7 +122,7 @@ export const events: StudProVersion[] = [
 						time: "5.00 PM - 6.00 PM",
 						topic: "",
 						description:
-							"An Application Engineer at Synopsys, an undergraduate of the University of Ruhuna, Mr. Ruchira Lakshan is" + 
+							"An Application Engineer at Synopsys, an undergraduate of the University of Ruhuna, Mr. Ruchira Lakshan is" +
 							"also an expert in the fields of Electronics and is highly skilled in PCB Designing, FlatCAM, 3D modelling and much more.",
 						images: ["/images/events/5.0/know-your-industry2.webp"],
 						speaker: {
@@ -164,12 +164,13 @@ export const events: StudProVersion[] = [
 							company: "99x",
 						},
 						venue: "Live via Zoom",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Know Your Niche",
-				description: "Know nothing about the industry you will be stepping into? This is a session series exclusively for you!",
+				description:
+					"Know nothing about the industry you will be stepping into? This is a session series exclusively for you!",
 				events: [
 					{
 						title: "Computing Session",
@@ -234,13 +235,14 @@ export const events: StudProVersion[] = [
 							company: "Zone24x7",
 						},
 						venue: "Live via Zoom",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Groom Yourself",
-				description: "Are you all prepped up to continue on with honing the professional inside you? 'Groom Yourself' organized by " +
-				"the IEEE Young Professionals Sri Lanka!",
+				description:
+					"Are you all prepped up to continue on with honing the professional inside you? 'Groom Yourself' organized by " +
+					"the IEEE Young Professionals Sri Lanka!",
 				events: [
 					{
 						title: "Workshop on Personal Grooming",
@@ -274,11 +276,12 @@ export const events: StudProVersion[] = [
 						},
 						venue: "Live via Zoom",
 					},
-				]
+				],
 			},
 			{
 				title: "Interviews 101",
-				description: "Unveil the true secret behind actually acing your interviews successfully with more tactics and more techniques.",
+				description:
+					"Unveil the true secret behind actually acing your interviews successfully with more tactics and more techniques.",
 				events: [
 					{
 						title: "General Interviews",
@@ -333,13 +336,14 @@ export const events: StudProVersion[] = [
 							company: "Arimac Lanka",
 						},
 						venue: "Live via Zoom",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Know Your Ethics",
-				description: "Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
-				"Your Ethics session is here for the rescue!",
+				description:
+					"Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
+					"Your Ethics session is here for the rescue!",
 				events: [
 					{
 						title: "Know Your Ethics",
@@ -348,7 +352,7 @@ export const events: StudProVersion[] = [
 						topic: "",
 						description:
 							"Zamreen Zarook is a distinguished professional who is a Motivational Speaker and People & Organizational " +
-							"Transformation Specialist. He is the Director of Glinmax Holdings (Pvt) and Tolmark Training & Consulting (Pvt) Ltd " + 
+							"Transformation Specialist. He is the Director of Glinmax Holdings (Pvt) and Tolmark Training & Consulting (Pvt) Ltd " +
 							"and he also works at the Universal College of Applied & General Studies. He owns a BBA double major in MGMT & MKT , " +
 							"Business Management , Marketing and related support services from Edith Cowan University.",
 						images: ["/images/events/5.0/know-your-ethics.webp"],
@@ -359,12 +363,13 @@ export const events: StudProVersion[] = [
 						},
 						venue: "Live via Zoom",
 					},
-				]
+				],
 			},
 			{
 				title: "'Ask Me Anything' Series",
-				description: "Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
-				"Your Ethics session is here for the rescue!",
+				description:
+					"Afraid of what the industry will expect of you? Wondering how the industry will look at you? Know " +
+					"Your Ethics session is here for the rescue!",
 				events: [
 					{
 						title: "Ask Me Anything",
@@ -372,7 +377,7 @@ export const events: StudProVersion[] = [
 						time: "11.00 AM Onwards",
 						topic: "",
 						description:
-							"Fortude is a leading global enterprise and digital services company that connects technology solutions to business, " + 
+							"Fortude is a leading global enterprise and digital services company that connects technology solutions to business, " +
 							"with the vision To build sustainable technology solutions, products and tools that support tracking ESG goals. " +
 							"It is of the largest Infor M3 certified resource bases in the world utilizing Microsoft Dynamics, BI and Analytics " +
 							"Certified resources.",
@@ -462,11 +467,11 @@ export const events: StudProVersion[] = [
 						topic: "",
 						description:
 							"Dialog Axiata Group, a subsidiary of Axiata Group Berhad (Axiata), operates Sri Lanka’s Leading Quad-Play " +
-							"Connectivity Provider. Dialog Axiata PLC, listed on the Colombo Stock Exchange, supplements its market leading " + 
+							"Connectivity Provider. Dialog Axiata PLC, listed on the Colombo Stock Exchange, supplements its market leading " +
 							"position in the Mobile Telecommunications sector with a robust footprint and market presence in Sri Lanka’s Fixed " +
 							"Telecommunications, Digital Pay Television, Digital Services, Financial Services, and IT services markets through " +
 							"its subsidiaries, Dialog Broadband Networks (Private) Limited (DBN), Dialog Television (Private) Limited (DTV), " +
-							"Digital Holdings Lanka (Private) Limited, Dialog Finance PLC, and H One (Private) Limited. Dialog Axiata Group is "+
+							"Digital Holdings Lanka (Private) Limited, Dialog Finance PLC, and H One (Private) Limited. Dialog Axiata Group is " +
 							"Sri Lanka's largest Foreign Direct Investor (FDI).",
 						images: ["/images/events/5.0/ask-me-anything6.webp"],
 						speaker: {
@@ -476,11 +481,12 @@ export const events: StudProVersion[] = [
 						},
 						venue: "Live via Zoom",
 					},
-				]
+				],
 			},
 			{
 				title: "A Better Way",
-				description: "Learn the best practices for successful job hunting at our comprehensive workshop, A Better Way!",
+				description:
+					"Learn the best practices for successful job hunting at our comprehensive workshop, A Better Way!",
 				events: [
 					{
 						title: "A Better Way",
@@ -490,7 +496,7 @@ export const events: StudProVersion[] = [
 						description:
 							"Mohamed Zaharan Liyabdeen is a highly qualified and experienced professional with a strong background in finance " +
 							"and management. He holds an MBA from the University of Colombo, and a Bachelor of Arts in Sustainable Performance " +
-							"Management from Manchester Metropolitan University. He is an Associate Member of the Chartered Institute of "  +
+							"Management from Manchester Metropolitan University. He is an Associate Member of the Chartered Institute of " +
 							"Management Accountants in the United Kingdom. With over 15 years of post-qualification experience, he has a " +
 							"wealth of knowledge in auditing, management consulting, and corporate finance. He has global exposure, having " +
 							"worked in the USA, the United Kingdom, the Middle East, Africa, India, and Sri Lanka. Currently, he is employed " +
@@ -503,9 +509,9 @@ export const events: StudProVersion[] = [
 						},
 						venue: "Live via Zoom",
 					},
-				]
+				],
 			},
-		]
+		],
 	},
 	{
 		version: "StudPro 6.0",
@@ -515,8 +521,9 @@ export const events: StudProVersion[] = [
 		eventSeries: [
 			{
 				title: "Branding Yourself",
-				description: "Branding Yourself is a three-day webinar series designed to equip graduates and undergraduates with essential " +
-				"skills and knowledge to effectively brand themselves for career advancement.",
+				description:
+					"Branding Yourself is a three-day webinar series designed to equip graduates and undergraduates with essential " +
+					"skills and knowledge to effectively brand themselves for career advancement.",
 				events: [
 					{
 						title: "Personal Branding",
@@ -528,9 +535,7 @@ export const events: StudProVersion[] = [
 							"individual with experience ranging from sourcing talent for companies based out of Europe, North America, and " +
 							"Asia. Currently, he is in the process of expanding the 99x talent base to other parts of the world, and " +
 							"providing career guidance to the community. ",
-						images: [
-							"/images/events/6.0/branding-yourself1.webp",
-						],
+						images: ["/images/events/6.0/branding-yourself1.webp"],
 						speaker: {
 							name: "Mr. Aishan Bamunawita",
 							title: " Lead Consultant - Global Talent Acquisition",
@@ -572,12 +577,13 @@ export const events: StudProVersion[] = [
 							company: "Trivago (Germany)",
 						},
 						venue: "Live via Zoom",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Know Your Industry",
-				description: "'Know Your Industry' aimed to provide a comprehensive understanding of the Engineering and Computing domains in Sri Lanka.",
+				description:
+					"'Know Your Industry' aimed to provide a comprehensive understanding of the Engineering and Computing domains in Sri Lanka.",
 				events: [
 					{
 						title: "Know Your Industry",
@@ -586,9 +592,7 @@ export const events: StudProVersion[] = [
 						topic: "Resume Building and Interview Skills",
 						description:
 							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? ",
-						images: [
-							"/images/events/javascript-intro.jpg",
-						],
+						images: ["/images/events/javascript-intro.jpg"],
 						speaker: {
 							name: "Jessica Brown",
 							title: "HR Director",
@@ -610,9 +614,9 @@ export const events: StudProVersion[] = [
 							company: "DesignStudio",
 						},
 						venue: "Showcase Hall, 404 Portfolio Place, Miami, USA",
-					}
-				]
-			}
+					},
+				],
+			},
 		],
 	},
 	{
@@ -632,9 +636,7 @@ export const events: StudProVersion[] = [
 						topic: "Cross-Platform Mobile Development",
 						description:
 							"Build mobile apps for iOS and Android with a single codebase.",
-						images: [
-							"/images/events/react-app.jpg",
-						],
+						images: ["/images/events/react-app.jpg"],
 						speaker: {
 							name: "James Martinez",
 							title: "Mobile App Developer",
@@ -656,8 +658,8 @@ export const events: StudProVersion[] = [
 							company: "TypeSafe Solutions",
 						},
 						venue: "Type Academy, 606 Interface Drive, Atlanta, USA",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "API and Testing",
@@ -669,9 +671,7 @@ export const events: StudProVersion[] = [
 						time: "09:00 - 12:30",
 						topic: "Building Efficient Data Layers",
 						description: "Design flexible and efficient APIs using GraphQL.",
-						images: [
-							"/images/events/web-development-intro.jpg",
-						],
+						images: ["/images/events/web-development-intro.jpg"],
 						speaker: {
 							name: "Kevin Zhang",
 							title: "API Architect",
@@ -693,8 +693,8 @@ export const events: StudProVersion[] = [
 							company: "TestDriven",
 						},
 						venue: "Test Labs, 808 Quality Assurance Way, Phoenix, USA",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "AI and Web Technologies",
@@ -707,9 +707,7 @@ export const events: StudProVersion[] = [
 						topic: "Integrating AI/ML Models in Web Applications",
 						description:
 							"Learn to incorporate AI capabilities into your web applications.",
-						images: [
-							"/images/events/html-css-basics.jpg",
-						],
+						images: ["/images/events/html-css-basics.jpg"],
 						speaker: {
 							name: "Dr. Samuel Lee",
 							title: "AI Research Scientist",
@@ -717,9 +715,9 @@ export const events: StudProVersion[] = [
 						},
 						venue:
 							"AI Research Center, 909 Neural Network Boulevard, Pittsburgh, USA",
-					}
-				]
-			}
+					},
+				],
+			},
 		],
 	},
 	{
@@ -730,7 +728,8 @@ export const events: StudProVersion[] = [
 		eventSeries: [
 			{
 				title: "Modern Architecture",
-				description: "Advanced frontend architectures and blockchain technologies",
+				description:
+					"Advanced frontend architectures and blockchain technologies",
 				events: [
 					{
 						title: "Micro-frontends Architecture",
@@ -739,9 +738,7 @@ export const events: StudProVersion[] = [
 						topic: "Building Scalable Frontend Applications",
 						description:
 							"Learn how to break down monolithic frontends into smaller, manageable pieces.",
-						images: [
-							"/images/events/react-app.jpg",
-						],
+						images: ["/images/events/react-app.jpg"],
 						speaker: {
 							name: "Rachel Green",
 							title: "Principal Frontend Architect",
@@ -756,9 +753,7 @@ export const events: StudProVersion[] = [
 						topic: "Decentralized Applications and Smart Contracts",
 						description:
 							"Explore the foundations of blockchain technology and Web3 development.",
-						images: [
-							"/images/events/javascript-intro.jpg",
-						],
+						images: ["/images/events/javascript-intro.jpg"],
 						speaker: {
 							name: "Chris Anderson",
 							title: "Blockchain Developer",
@@ -766,8 +761,8 @@ export const events: StudProVersion[] = [
 						},
 						venue:
 							"Blockchain Center, 1111 Distributed Ledger Lane, San Francisco, USA",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Performance and Cloud",
@@ -775,7 +770,7 @@ export const events: StudProVersion[] = [
 				events: [
 					{
 						title: "Performance Optimization Masterclass",
-						date: "June 23, 2025", 
+						date: "June 23, 2025",
 						time: "10:00 - 14:00",
 						topic: "Advanced Techniques for High-Performance Web Apps",
 						description:
@@ -795,17 +790,15 @@ export const events: StudProVersion[] = [
 						topic: "Kubernetes, Serverless, and Microservices",
 						description:
 							"Build resilient, scalable applications using cloud-native approaches.",
-						images: [
-							"/images/events/git-version-control.jpg",
-						],
+						images: ["/images/events/git-version-control.jpg"],
 						speaker: {
 							name: "Jordan Smith",
 							title: "Cloud Solutions Architect",
 							company: "CloudNative Corp",
 						},
 						venue: "Cloud Computing Center, 1313 Container Road, Seattle, USA",
-					}
-				]
+					},
+				],
 			},
 			{
 				title: "Professional Development",
@@ -833,18 +826,16 @@ export const events: StudProVersion[] = [
 						topic: "Project Presentations and Industry Networking",
 						description:
 							"Showcase your projects and connect with industry professionals.",
-						images: [
-							"/images/events/react-app.jpg",
-						],
+						images: ["/images/events/react-app.jpg"],
 						speaker: {
 							name: "StudPro Alumni Panel",
 							title: "Various Roles",
 							company: "Industry Partners",
 						},
 						venue: "Conference Center, 1515 Connection Plaza, Chicago, USA",
-					}
-				]
-			}
+					},
+				],
+			},
 		],
 	},
 ];

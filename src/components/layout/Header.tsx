@@ -8,13 +8,16 @@ export const Header = () => {
 				<Image
 					src="/images/strudpro-logo.png"
 					alt="StudPro Logo"
-					width={100}
-					height={40}
+					width={0}
+					height={0}
+					sizes="5vw"
+					style={{ width: "100%" }}
+					className="h-8"
 				/>
 			</Link>
 			<div className="flex gap-8">
-				<Link href="/#about">About Us</Link>
-				<Link href="/events">Events</Link>
+				<Link href="/about-us">About Us</Link>
+				<Link href="/events">Event Timeline</Link>
 				<Link href="/partners">Partners</Link>
 			</div>
 		</nav>
