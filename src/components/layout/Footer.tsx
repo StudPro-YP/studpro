@@ -46,7 +46,7 @@ interface FooterLinksSectionProps {
 }
 
 const FooterLinksSection = ({ title, links }: FooterLinksSectionProps) => (
-  <div className="flex flex-col gap-2">
+  <div className="flex flex-col gap-2 w-48">
     <h3 className="text-white font-bold uppercase">{title}</h3>
     {links.map((link) => (
       <Link key={link.href} href={link.href} className="text-white hover:text-primary transition-colors">
@@ -58,14 +58,14 @@ const FooterLinksSection = ({ title, links }: FooterLinksSectionProps) => (
 
 export const Footer = () => (
     <footer className="row-start-3 flex flex-col gap-10 items-center justify-center w-full bg-secondary">
-        <div className="flex flex-row justify-between w-full px-16 py-8 mt-8">
+        <div className="flex flex-row justify-around w-full px-16 py-8 mt-8">
             <div className="flex flex-col gap-6 w-fit">
                 <div className="bg-white p-4 w-fit rounded-lg">
                     <Image src="/images/studpro-logo.png" alt="StudPro Logo" height={40} width={200} />
                 </div>
                 <FooterSocialLinks/>
             </div>
-            <div className="flex-1 flex justify-around">
+            <div className="flex gap-12">
                 <FooterLinksSection title="Useful Links" links={usefulLinks}/>
                 <FooterLinksSection title="National Projects" links={nationalProjects}/>
                 <FooterLinksSection title="IEEE Links" links={ieeeLinks}/>
