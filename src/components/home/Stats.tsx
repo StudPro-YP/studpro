@@ -15,7 +15,7 @@ export const Stats = () => {
         {type: 'Speakers', value: 16, icon: 'MicVocal'},
     ]
     return (
-        <div className="h-[120vh] flex flex-col justify-center items-center gap-4 bg-transparent">
+        <div className="h-screen flex flex-col justify-center items-center gap-4 bg-transparent">
             <h3 className="text-2xl font-semibold text-white">We have conducted StudPro for many Years. We ended
                 StudPro7.0 with massive numbers.
             </h3>

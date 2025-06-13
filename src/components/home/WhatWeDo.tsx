@@ -22,10 +22,15 @@ export const WhatWeDo = () => {
 
 		let totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
 
+		const updateScroll = () => {
+			totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
+			ScrollTrigger.refresh();
+		};
+
 		const pinTrigger = ScrollTrigger.create({
 			trigger: container,
 			start: "top top",
-			end: `+=${totalScroll}`,
+			end: () => `+=${totalScroll}`,
 			pin: true,
 			pinSpacing: true,
 			anticipatePin: 1,
@@ -44,14 +49,16 @@ export const WhatWeDo = () => {
 			e.preventDefault();
 		};
 		rightContent.addEventListener("wheel", preventScroll, { passive: false });
-		// rightContent.addEventListener('touchmove', preventScroll, { passive: false });
+
+		const resizeObserver = new ResizeObserver(updateScroll);
+		resizeObserver.observe(rightContent);
 
 		ScrollTrigger.refresh();
 
 		return () => {
 			pinTrigger.kill();
 			rightContent.removeEventListener("wheel", preventScroll);
-			// rightContent.removeEventListener('touchmove', preventScroll);
+			resizeObserver.disconnect();
 		};
 	}, []);
 
