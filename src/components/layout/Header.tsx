@@ -17,9 +17,9 @@ export const Header = () => {
                 />
             </Link>
             <div className="flex gap-8">
-                <Link href="/about-us">About Us</Link>
-                <Link href="/events">Events</Link>
-                <Link href="/partners">Partners</Link>
+                <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
+                <Link href="/events" className="hover:text-primary transition-colors">Events</Link>
+                <Link href="/partners" className="hover:text-primary transition-colors">Partners</Link>
             </div>
         </nav>
     );
