@@ -18,7 +18,7 @@ export function TabsSwitcher() {
 
 	return (
 		<div className="w-full">
-			<Tabs defaultValue={uniqueYears[0]?.toString()} className="w-full">
+			<Tabs defaultValue={uniqueYears[uniqueYears.length - 1]?.toString()} className="w-full">
 				<TabsList
 					className="grid w-full mb-8 bg-primary/30"
 					style={{
