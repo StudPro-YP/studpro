@@ -1,7 +1,7 @@
 "use client";
 
 import { events } from "@/data/events";
-import { Event, EventSeries, StudProVersion } from "@/data/events";
+import { Event, StudProVersion } from "@/data/events";
 import { useState, useEffect } from "react";
 import { EventCard } from "@/components/events/EventCard";
 
@@ -54,7 +54,8 @@ export const Events = () => {
 	}, []);
 
 	return (
-		<div className="min-h-screen flex flex-col justify-center items-center py-16">
+		<div className="min-h-[140vh] flex justify-center">
+			<div className="flex flex-col justify-center items-center py-16">
 			{/* Upcoming Events Section */}
 			{upcomingEvents.length > 0 && (
 				<div className="w-full max-w-7xl mb-16">
@@ -78,6 +79,7 @@ export const Events = () => {
 					</div>
 				</div>
 			)}
+			</div>
 		</div>
 	);
 };
