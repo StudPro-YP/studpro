@@ -583,37 +583,166 @@ export const events: StudProVersion[] = [
 			{
 				title: "Know Your Industry",
 				description:
-					"'Know Your Industry' aimed to provide a comprehensive understanding of the Engineering and Computing domains in Sri Lanka.",
+					"Know Your Industry aimed to provide a comprehensive understanding of the Engineering and Computing domains in Sri Lanka.",
 				events: [
 					{
 						title: "Know Your Industry",
 						date: "June 27, 2023",
 						time: "6 PM Onwards",
-						topic: "Resume Building and Interview Skills",
+						topic: "",
 						description:
 							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? ",
-						images: ["/images/events/javascript-intro.jpg"],
+						images: ["/images/events/6.0/know-your-industry1.webp"],
 						speaker: {
-							name: "Jessica Brown",
-							title: "HR Director",
-							company: "StartupHub",
+							name: "Helani Wanniarachchi",
+							title: "Head of Project Management",
+							company: "SimCentric",
 						},
-						venue: "Career Center, 303 Opportunity Avenue, Denver, USA",
+						venue: "Live via Zoom",
 					},
 					{
-						title: "Portfolio Development",
-						date: "September 15, 2023",
-						time: "09:00 - 12:00",
-						topic: "Showcasing Your Work Effectively",
+						title: "Know Your Industry",
+						date: "June 27, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
 						description:
-							"Learn how to create a portfolio that gets you noticed by employers.",
-						images: ["/images/events/html-css-basics.jpg"],
+							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? 🤔",
+						images: ["/images/events/6.0/know-your-industry2.webp"],
 						speaker: {
-							name: "David Wilson",
-							title: "UX Designer",
-							company: "DesignStudio",
+							name: "Jude Shilan Wijesekera",
+							title: "Lead TechOps Professional",
+							company: "CodeGen International",
 						},
-						venue: "Showcase Hall, 404 Portfolio Place, Miami, USA",
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Know Your Industry",
+						date: "June 27, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? 🤔",
+						images: ["/images/events/6.0/know-your-industry3.webp"],
+						speaker: {
+							name: "Chamara Jayaweera",
+							title: "Managing Director",
+							company: "Itechro (Pvt) Ltd",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Know Your Industry",
+						date: "June 27, 2023",
+						time: "6.00 PM Onwards",
+						topic: "",
+						description:
+							"Are you eager to gain a comprehensive understanding of the industry you are about to step into? 🤔",
+						images: ["/images/events/6.0/know-your-industry4.webp"],
+						speaker: {
+							name: "Chandana Ranasinghe",
+							title: "Founder & CEO",
+							company: "Acentura Inc.",
+						},
+						venue: "Live via Zoom",
+					},
+				],
+			},
+			{
+				title: "Career Pathways",
+				description:
+					"Career Pathways informs fresh graduates about the wide range of roles and responsibilities within the computing, electrical and electronic industries.",
+				events: [
+					{
+						title: "Computing Stream",
+						date: "July 27, 2023",
+						time: "7 PM Onwards",
+						topic: "",
+						description:
+							"Discover the magical fusion of computing and engineering that will unlock new dimensions for your future. 🌐✨" + 
+							"Join us as we dive into the exciting job roles, uncover hidden opportunities, and pave the way to your dream career.👩🏽‍💻",
+						images: ["/images/events/6.0/career-pathways1.webp"],
+						speaker: {
+							name: "Selvarantnam Uthaiyashankar",
+							title: "Senior Vice President - Engineering",
+							company: "WSO2",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Computing Stream",
+						date: "July 27, 2023",
+						time: "7.00 PM Onwards",
+						topic: "",
+						description:
+							"Discover the magical fusion of computing and engineering that will unlock new dimensions for your future. 🌐✨ " +
+							"Join us as we dive into the exciting job roles, uncover hidden opportunities, and pave the way to your dream career.👩🏽‍💻",
+						images: ["/images/events/6.0/career-pathways2.webp"],
+						speaker: {
+							name: "Harshan Nishantha",
+							title: "Lead Consultant - Technology",
+							company: "Virtusa (Pvt) Ltd",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Engineering Stream",
+						date: "July 27, 2023",
+						time: "7.00 PM Onwards",
+						topic: "",
+						description:
+							"Discover the magical fusion of computing and engineering that will unlock new dimensions for your future. 🌐✨ " +
+							"Join us as we dive into the exciting job roles, uncover hidden opportunities, and pave the way to your dream career.👩🏽‍💻",
+						images: ["/images/events/6.0/career-Pathways3.webp"],
+						speaker: {
+							name: "Lilantha Samaranayake",
+							title: "Professor in Electrical & Electronic Engineering",
+							company: "University of Peradeniya",
+						},
+						venue: "Live via Zoom",
+					},
+				],
+			},
+			{
+				title: "Interview Mastery",
+				description:
+					"Say goodbye to interview jitters! Learn from the pros, gain expert insights, and discover the keys to confidently " +
+					"showcasing your skills and experience.",
+				events: [
+					{
+						title: "Interview Mastery",
+						date: "August 30, 2023",
+						time: "7 PM Onwards",
+						topic: "",
+						description:
+							"Ready to Nail Your Next Interview? 🚀 Curious about the magic behind crushing tough questions while leaving a " +
+							"lasting mark? 🤔 Unveil the art of interview with us in our power-packed session – 'Interview Mastery' ! 🔑 " +
+							"Unlock the door to acing interview questions with finesse and confidence. From decoding the trickiest questions " +
+							"to mastering the art of storytelling.✨",
+						images: ["/images/events/6.0/interview-mastery1.webp"],
+						speaker: {
+							name: "Udaya Chathuranga",
+							title: "Technical Lead",
+							company: "Fortude",
+						},
+						venue: "Live via Zoom",
+					},
+					{
+						title: "Interview Mastery",
+						date: "August 30, 2023",
+						time: "7.00 PM Onwards",
+						topic: "",
+						description:
+							"Ready to Nail Your Next Interview? 🚀 Curious about the magic behind crushing tough questions while leaving a " +
+							"lasting mark? 🤔 Unveil the art of interview with us in our power-packed session – 'Interview Mastery' ! 🔑 " +
+							"Unlock the door to acing interview questions with finesse and confidence. From decoding the trickiest questions " +
+							"to mastering the art of storytelling.✨",
+						images: ["/images/events/6.0/interview-mastery2.webp"],
+						speaker: {
+							name: "Hozni Feroz",
+							title: "Head of Global Talent Acquisition",
+							company: "Fortude",
+						},
+						venue: "Live via Zoom",
 					},
 				],
 			},
