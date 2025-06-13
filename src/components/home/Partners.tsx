@@ -22,8 +22,8 @@ export const Partners = () => {
 	// Sort partners by level (Platinum first, then Gold, then Silver, then Bronze, then partners with no level)
 	const sortedPartners = [...currentPartners].sort(
 		(a, b) =>
-			levelOrder[a.partnerLevel || "undefined"] -
-			levelOrder[b.partnerLevel || "undefined"],
+			levelOrder[a.partnerLevel as keyof typeof levelOrder ?? "undefined"] -
+			levelOrder[b.partnerLevel as keyof typeof levelOrder ?? "undefined"],
 	);
 
 	// Check if we have any partners
