@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { partners } from "@/data/partners";
+import { partnersByYear, calculatePartnerYears, getPartnerByPartnerRecord } from "@/data/partners";
 import { PartnerCard } from "@/components/partners/PartnerCard";
 
 export const Partners = () => {
 	const currentYear = new Date().getFullYear(); // Current year
 
 	// Find partners from the current year
-	const currentYearGroup = partners.find(
+	const currentYearGroup = partnersByYear.find(
 		(yearGroup) => yearGroup.year === currentYear,
 	);
 	const currentPartners = currentYearGroup?.partners || [];
@@ -61,11 +61,15 @@ export const Partners = () => {
 						{" "}
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 							{/* Limited to 12 partners including those with undefined levels */}
-							{limitedPartners.map((partner, index) => (
-								<div key={`${partner.name}-${index}`} className="group">
-									<PartnerCard partner={partner} />
-								</div>
-							))}
+							{limitedPartners.map((partner, index) => {
+								const company = getPartnerByPartnerRecord(partner)
+								const years = calculatePartnerYears(partner);
+								return (
+									<div key={`${partner.companyId}-${index}`} className="group">
+										<PartnerCard partner={company} years={years} />
+									</div>
+								)
+							})}
 						</div>
 					</div>
 				) : (
