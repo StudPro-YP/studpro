@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import type { Partner } from "@/data/partners";
+import { Partner } from "@/data/partners";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,7 +22,7 @@ export function PartnerCard({partner, years}: PartnerCardProps) {
                 className="h-full transition-all duration-200 hover:shadow-lg hover:scale-[1.02] bg-white overflow-hidden pt-0 cursor-pointer">
                 <div className="w-full h-[150px] relative flex items-center justify-center pt-10 p-6 ">
                     <Image
-                        src={`/images/partners/${partner.logo || partner.name.toLowerCase().replace(/\s+/g, "_") + ".png"}`}
+                        src={`/images/partners/${partner.logo || partner.id + ".png"}`}
                         alt={partner.name}
                         width={180}
                         height={100}
