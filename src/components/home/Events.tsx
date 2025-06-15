@@ -56,29 +56,29 @@ export const Events = () => {
 	return (
 		<div className="min-h-[170vh] flex justify-center items-center">
 			<div className="flex flex-col justify-center items-center py-16">
-			{/* Upcoming Events Section */}
-			{upcomingEvents.length > 0 && (
-				<div className="w-full max-w-7xl mb-16">
-					<div className="mb-8 text-center ">
-						<h2 className="text-4xl uppercase text-secondary font-bold mb-4">
-							Upcoming Events
-						</h2>
-						<p className="text-lg mx-auto text-gray-600">
-							Join us for our next exciting events where innovation meets
-							inspiration. <br />
-							Expand your horizons, connect with like-minded individuals, and
-							take your skills to the next level.
-						</p>
+				{/* Upcoming Events Section */}
+				{upcomingEvents.length > 0 && (
+					<div className="w-full max-w-7xl mb-16">
+						<div className="mb-8 text-center ">
+							<h2 className="text-4xl uppercase text-secondary font-bold mb-4">
+								Upcoming Events
+							</h2>
+							<p className="text-lg mx-auto text-gray-600">
+								Join us for our next exciting events where innovation meets
+								inspiration. <br />
+								Expand your horizons, connect with like-minded individuals, and
+								take your skills to the next level.
+							</p>
+						</div>
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+							{upcomingEvents.map((event, idx) => (
+								<div key={`upcoming-${idx}`}>
+									<EventCard session={event} version={event.versionTitle} />
+								</div>
+							))}
+						</div>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-						{upcomingEvents.map((event, idx) => (
-							<div key={`upcoming-${idx}`}>
-								<EventCard session={event} version={event.versionTitle} />
-							</div>
-						))}
-					</div>
-				</div>
-			)}
+				)}
 			</div>
 		</div>
 	);

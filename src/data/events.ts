@@ -658,7 +658,7 @@ export const events: StudProVersion[] = [
 						time: "7 PM Onwards",
 						topic: "",
 						description:
-							"Discover the magical fusion of computing and engineering that will unlock new dimensions for your future. 🌐✨" + 
+							"Discover the magical fusion of computing and engineering that will unlock new dimensions for your future. 🌐✨" +
 							"Join us as we dive into the exciting job roles, uncover hidden opportunities, and pave the way to your dream career.👩🏽‍💻",
 						images: ["/images/events/6.0/career-pathways1.webp"],
 						speaker: {
@@ -756,8 +756,9 @@ export const events: StudProVersion[] = [
 		eventSeries: [
 			{
 				title: "Industry Connect with StudPro",
-				description: "Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
-				"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
+				description:
+					"Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
+					"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
 				events: [
 					{
 						title: "IFS Champions Day",
@@ -803,7 +804,7 @@ export const events: StudProVersion[] = [
 						topic: "",
 						description:
 							"The SLT-Mobitel Industry Visit offers undergraduates a valuable opportunity to explore the operations of " +
-							"Sri Lanka’s national ICT and telecommunications service provider. Through guided tours and expert-led sessions, "  +
+							"Sri Lanka’s national ICT and telecommunications service provider. Through guided tours and expert-led sessions, " +
 							"students gain insights into cutting-edge technologies, network infrastructure, and industry practices. " +
 							"This experience bridges the gap between theory and practice, preparing students for future careers in the " +
 							"tech and telecom sectors.",
@@ -824,7 +825,7 @@ export const events: StudProVersion[] = [
 							"The Virtusa Industry Visit offers undergraduates an exciting opportunity to explore the dynamic world of a " +
 							"global IT services and consulting company. Students gain first-hand insights into software development, " +
 							"digital engineering, and real-world project management. Through interactive sessions and expert guidance, " +
-							"the visit bridges academic learning with industry practices, inspiring future professionals in technology and " + 
+							"the visit bridges academic learning with industry practices, inspiring future professionals in technology and " +
 							"innovation.",
 						images: ["/images/events/7.0/virtusa-visit.png"],
 						speaker: {
@@ -859,7 +860,7 @@ export const events: StudProVersion[] = [
 						time: "10.00 AM Onwards",
 						topic: "",
 						description:
-							"The Calcey Industry Visit immerses undergraduates in the culture of an award‑winning software product engineering " + 
+							"The Calcey Industry Visit immerses undergraduates in the culture of an award‑winning software product engineering " +
 							"firm. Participants tour collaborative workspaces, meet engineers driving agile development, and observe live " +
 							"demonstrations of cloud, mobile, and UX projects for global clients. Interactive Q&A sessions reveal career " +
 							"pathways, best practices, and innovation strategies, linking classroom theory to real‑world technology " +
@@ -932,7 +933,7 @@ export const events: StudProVersion[] = [
 						time: "7.00 PM Onwards",
 						topic: "Crafting a Winning First Impression on Paper",
 						description:
-							"The second session of the Forge Your Icon series, CV That Gets You Noticed, was held on 29th April 2025 with " + 
+							"The second session of the Forge Your Icon series, CV That Gets You Noticed, was held on 29th April 2025 with " +
 							"Ms. Sonia ChinnaIyah Thayakaran, CEO of Recruiting By Sonia. As an HR gold medalist, she shared expert " +
 							"strategies on crafting impactful CVs that stand out in competitive job markets. The session offered actionable " +
 							"tips to highlight strengths and secure interview calls.",
@@ -942,8 +943,7 @@ export const events: StudProVersion[] = [
 							title: "CEO and HR Gold Medalist",
 							company: "Recruiting By Sonia",
 						},
-						venue:
-							"Live via Zoom",
+						venue: "Live via Zoom",
 					},
 					{
 						title: "Personal Branding For Career Growth",
@@ -961,15 +961,15 @@ export const events: StudProVersion[] = [
 							title: "HR Manager - Talent Acquisition & L&D",
 							company: "Acentura Inc.",
 						},
-						venue:
-							"Live via Zoom",
+						venue: "Live via Zoom",
 					},
 				],
 			},
 			{
 				title: "Industry Connect With StudPro",
-				description: "Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
-				"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
+				description:
+					"Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
+					"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
 				events: [
 					{
 						title: "Cambio Software",
@@ -987,8 +987,7 @@ export const events: StudProVersion[] = [
 							title: "",
 							company: "E-HealthCare Solutions Providers",
 						},
-						venue:
-							"Cambio Sri Lanka, Colombo",
+						venue: "Cambio Sri Lanka, Colombo",
 					},
 					{
 						title: "Acentura Inc.",
@@ -1005,8 +1004,7 @@ export const events: StudProVersion[] = [
 							title: "",
 							company: " Globel Digital Solutions Providers",
 						},
-						venue:
-							"Acentura Inc, Colombo",
+						venue: "Acentura Inc, Colombo",
 					},
 					{
 						title: "Altrium Sri Lanka",
@@ -1024,8 +1022,7 @@ export const events: StudProVersion[] = [
 							title: "",
 							company: "Global IT Services Company",
 						},
-						venue:
-							"Altrium Sri Lanka, Colombo",
+						venue: "Altrium Sri Lanka, Colombo",
 					},
 					{
 						title: "WSO2 Sri Lanka",
@@ -1033,7 +1030,7 @@ export const events: StudProVersion[] = [
 						time: "9.30 PM Onwards",
 						topic: "Industry Exposure through StudPro 8.0",
 						description:
-							"The Industry Connect session with WSO2 as part of StudPro 8.0 was an enriching experience for all participants." + 
+							"The Industry Connect session with WSO2 as part of StudPro 8.0 was an enriching experience for all participants." +
 							"Held on 18th June 2025, the visit offered an exclusive look into WSO2’s innovative tech landscape, where students " +
 							"explored real-world applications of API management, integration platforms, and open-source solutions. The " +
 							"session fostered meaningful discussions, hands-on learning, and valuable networking, making it a truly " +
@@ -1044,8 +1041,7 @@ export const events: StudProVersion[] = [
 							title: "",
 							company: "Enterprise Software & IT Services Providers",
 						},
-						venue:
-							"WSO2 Sri Lanka, Colombo",
+						venue: "WSO2 Sri Lanka, Colombo",
 					},
 				],
 			},
