@@ -1,230 +1,203 @@
-// data file
+import { Company, companyMap } from "@/data/companies";
 
-export interface Partner {
-    name: string;
-    logo?: string;
+export interface PartnerRecord {
+    companyId: string;
     partnerLevel?: string;
-    website?: string; // Optional website URL
 }
 
-// Groups by year
 export interface PartnersByYear {
     year: number;
-    version: string; // e.g., "StudPro 5.0"
-    partners: Partner[];
+    version: string;
+    partners: PartnerRecord[];
 }
 
-export const partners: PartnersByYear[] = [
+export interface Partner extends Company {
+    partnerLevel?: string;
+}
+
+export const partnersByYear: PartnersByYear[] = [
     {
         year: 2022,
         version: "StudPro 5.0",
         partners: [
             {
-                name: "Dialog Axiata",
-                partnerLevel: "Platinum",
+                companyId: "dialog_axiata",
+                partnerLevel: "Platinum"
             },
             {
-                name: "Azend Technologies",
-                partnerLevel: "Platinum",
-                logo: "azend.png"
+                companyId: "azend_technologies",
+                partnerLevel: "Platinum"
             },
             {
-                name: "Axiata Digital Labs",
-                partnerLevel: "Platinum",
+                companyId: "axiata_digital_labs",
+                partnerLevel: "Platinum"
             },
             {
-                name: "Cambio Software Engineering",
-                partnerLevel: "Platinum",
+                companyId: "cambio_software_engineering",
+                partnerLevel: "Platinum"
             },
             {
-                name: "DirectFN",
-                partnerLevel: "Gold",
-                logo: "directfn.webp"
+                companyId: "directfn",
+                partnerLevel: "Gold"
             },
             {
-                name: "NCINGA",
-                partnerLevel: "Gold",
-                logo: "ncinga.jpg"
+                companyId: "ncinga",
+                partnerLevel: "Gold"
             },
             {
-                name: "LSEG Sri Lanka",
-                partnerLevel: "Silver",
-                logo: "lseg.svg"
-            },
-            {
-                name: "Rizing Lanka",
+                companyId: "lseg_sri_lanka",
                 partnerLevel: "Silver"
             },
             {
-                name: "Fortude",
-                partnerLevel: "Bronze",
-                logo: "fortude.webp"
+                companyId: "rizing_lanka",
+                partnerLevel: "Silver"
             },
             {
-                name: ":Different Technologies",
-                partnerLevel: "Bronze",
-                logo: "different.svg"
+                companyId: "fortude",
+                partnerLevel: "Bronze"
             },
             {
-                name: "SLT Mobitel"
+                companyId: "different_technologies",
+                partnerLevel: "Bronze"
             },
             {
-                name: "Enactor",
-                logo: "enactor.jpg"
+                companyId: "slt_mobitel"
             },
             {
-                name: "huex"
+                companyId: "enactor"
             },
             {
-                name: "Expernetic",
-                logo: "expernetic.jpeg"
+                companyId: "huex"
             },
             {
-                name: "IQZ Systems",
+                companyId: "expernetic"
             },
             {
-                name: "ChampSoft",
-
+                companyId: "iqz_systems"
             },
             {
-                name: "Data Capture Experts",
-                logo: "dce.webp"
+                companyId: "champsoft"
             },
-
+            {
+                companyId: "data_capture_experts"
+            }
         ]
     },
     {
         year: 2023,
         version: "StudPro 6.0",
         partners: [
-			{
-				name: "Dialog Axiata",
-			},
             {
-                name: "huex"
+                companyId: "dialog_axiata"
             },
             {
-                name: "Global Market Technologies",
+                companyId: "huex"
             },
             {
-                name: "Syntax Genie",
+                companyId: "global_market_technologies"
             },
             {
-                name: "FutureLabs",
+                companyId: "syntax_genie"
             },
             {
-                name: "Eyepax IT Consulting",
-				logo: "eyepax.jpeg"
+                companyId: "futurelabs"
             },
             {
-                name: "Nagarro",
+                companyId: "eyepax_it_consulting"
+            },
+            {
+                companyId: "nagarro",
                 partnerLevel: "Bronze"
             },
             {
-                name: "Rootcode Labs",
-                partnerLevel: "Bronze",
-                logo: "rootcode.jpg"
+                companyId: "rootcode_labs",
+                partnerLevel: "Bronze"
             },
             {
-                name: "Hayleys",
+                companyId: "hayleys"
             },
             {
-                name: "99x",
+                companyId: "99x",
                 partnerLevel: "Gold"
             },
             {
-                name: ":Different Technologies",
-                partnerLevel: "Gold",
-                logo: "different.svg"
+                companyId: "different_technologies",
+                partnerLevel: "Gold"
             },
             {
-                name: "VeroxLabs",
+                companyId: "veroxlabs"
             },
             {
-                name: "CICT",
+                companyId: "cict"
             },
             {
-                name: "Resource Management Associates",
-                partnerLevel: "Bronze",
-                logo: "rma.png"
-            },
-            {
-                name: "Brandix Lanka",
-            },
-            {
-                name: "Azend Technologies",
-                logo: "azend.png"
-            },
-            {
-                name: "SAGT Sri Lanka",
-                partnerLevel: "Bronze",
-            },
-            {
-                name: "PayMedia",
-            },
-            {
-                name: "IFS Sri Lanka",
-                partnerLevel: "Gold",
-                logo: "ifs.jpeg"
-            },
-            {
-                name: "Persistent Systems",
-            },
-            {
-                name: "Effective Solutions",
+                companyId: "resource_management_associates",
                 partnerLevel: "Bronze"
             },
             {
-                name: "Amithi Power Consultants",
-                logo: "apcl.jpeg"
+                companyId: "brandix_lanka"
             },
             {
-                name: "Elephant House",
-                logo: "elephant_house.webp"
+                companyId: "azend_technologies"
             },
             {
-                name: "John Keells IT",
-            },
-            {
-                name: "MyBudget Holdings",
-                logo: "mybudget.webp"
-            },
-            {
-                name: "EvonSys",
+                companyId: "sagt_sri_lanka",
                 partnerLevel: "Bronze"
             },
             {
-                name: "Mitra Innovation",
-                partnerLevel: "Gold",
+                companyId: "paymedia"
             },
             {
-                name: "Pearson Lanka",
-                partnerLevel: "Gold",
+                companyId: "ifs_sri_lanka",
+                partnerLevel: "Gold"
             },
             {
-                name:"LSEG Sri Lanka",
-                logo: "lseg.svg"
+                companyId: "persistent_systems"
             },
             {
-                name: "SimCentric Technologies",
-                partnerLevel: "Bronze",
-                logo: "sim_centric.jpg"
+                companyId: "effective_solutions",
+                partnerLevel: "Bronze"
             },
             {
-                name: "SIXER Video",
-                partnerLevel: "Bronze",
-                logo: "sixer_video.avif"
+                companyId: "amithi_power_consultants"
             },
             {
-                name: "Virtusa",
+                companyId: "elephant_house"
             },
             {
-                name:"Creative Software",
+                companyId: "john_keells_it"
             },
             {
-                name: "SLT Mobitel",
+                companyId: "mybudget_holdings"
+            },
+            {
+                companyId: "evonsys",
+                partnerLevel: "Bronze"
+            },
+            {
+                companyId: "mitra_innovation",
+                partnerLevel: "Gold"
+            },
+            {
+                companyId: "pearson_lanka",
+                partnerLevel: "Gold"
+            },
+            {
+                companyId: "lseg_sri_lanka"
+            },
+            {
+                companyId: "sixer_video",
+                partnerLevel: "Bronze"
+            },
+            {
+                companyId: "virtusa"
+            },
+            {
+                companyId: "creative_software"
+            },
+            {
+                companyId: "slt_mobitel"
             }
-
         ]
     },
     {
@@ -232,45 +205,40 @@ export const partners: PartnersByYear[] = [
         version: "StudPro 7.0",
         partners: [
             {
-                name: "IFS Sri Lanka",
-                partnerLevel: "Industry",
-                logo: "ifs.jpeg"
+                companyId: "ifs_sri_lanka",
+                partnerLevel: "Industry"
             },
             {
-                name: "Dialog Axiata",
-                partnerLevel: "Industry",
+                companyId: "dialog_axiata",
+                partnerLevel: "Industry"
             },
             {
-                name: "SLT Mobitel",
-                partnerLevel: "Industry",
+                companyId: "slt_mobitel",
+                partnerLevel: "Industry"
             },
             {
-                name: "Virtusa",
-                partnerLevel: "Industry",
+                companyId: "virtusa",
+                partnerLevel: "Industry"
             },
             {
-                name: "Calcey",
-                partnerLevel: "Industry",
-                logo: "calcey.webp"
+                companyId: "calcey",
+                partnerLevel: "Industry"
             },
             {
-                name: "Zone 24x7",
-                partnerLevel: "Industry",
-                logo: "zone_24x7.webp"
+                companyId: "zone_24x7",
+                partnerLevel: "Industry"
             },
             {
-                name: "Codegen",
-                partnerLevel: "Industry",
+                companyId: "codegen",
+                partnerLevel: "Industry"
             },
             {
-                name: "Ladyproto 1.0: WIE affinity group - UoV",
-                partnerLevel: "Ecosystem",
-                logo: "ladyproto.png"
+                companyId: "ladyproto_10_wie_affinity_group___uov",
+                partnerLevel: "Ecosystem"
             },
             {
-                name: "UOR Career Fair",
-                partnerLevel: "Ecosystem",
-                logo: "uor_career_fair.png"
+                companyId: "uor_career_fair",
+                partnerLevel: "Ecosystem"
             }
         ]
     },
@@ -278,64 +246,66 @@ export const partners: PartnersByYear[] = [
         year: 2025,
         version: "StudPro 8.0",
         partners: [
-            // Visits
             {
-                name: "Cambio Software Engineering",
-                partnerLevel: "Industry",
+                companyId: "cambio_software_engineering",
+                partnerLevel: "Industry"
             },
             {
-                name: "Altrium",
-                partnerLevel: "Industry",
+                companyId: "altrium",
+                partnerLevel: "Industry"
             },
             {
-                name: "IFS Sri Lanka",
-                partnerLevel: "Industry",
-                logo: "ifs.jpeg"
+                companyId: "ifs_sri_lanka",
+                partnerLevel: "Industry"
             },
             {
-                name: "RootCode Labs",
-                partnerLevel: "Industry",
-                logo: "rootcode.jpg"
+                companyId: "rootcode_labs",
+                partnerLevel: "Industry"
             },
             {
-                name: "Acentura",
-                partnerLevel: "Industry",
-                logo: "acentura.jpg"
+                companyId: "acentura",
+                partnerLevel: "Industry"
             },
             {
-                name: "WSO2",
-                partnerLevel: "Industry",
-            },
-            //Edu week
-            {
-                name: "VSIS",
-                partnerLevel: "Industry",
-                logo: "vsis.jpg"
+                companyId: "wso2",
+                partnerLevel: "Industry"
             },
             {
-                name: "Nagarro",
-                partnerLevel: "Industry",
+                companyId: "vsis",
+                partnerLevel: "Industry"
             },
             {
-                name: "Virtusa",
-                partnerLevel: "Industry",
+                companyId: "nagarro",
+                partnerLevel: "Industry"
             },
             {
-                name: "Idea8",
-                partnerLevel: "Industry",
+                companyId: "virtusa",
+                partnerLevel: "Industry"
             },
             {
-                name: "Inivos",
-                partnerLevel: "Industry",
-                logo: "inivos.jpg"
+                companyId: "idea8",
+                partnerLevel: "Industry"
+            },
+            {
+                companyId: "inivos",
+                partnerLevel: "Industry"
             }
         ]
-    },
+    }
 ];
 
-export function calculatePartnerYears(partner: Partner): number {
+export function calculatePartnerYears(partner: PartnerRecord): number {
     // Count the number of year groups a partner occurs in
-    return partners.filter(yearGroup =>
-        yearGroup.partners.some(p => p.name === partner.name)
-    ).length;
+    return partnersByYear.filter((yearGroup: PartnersByYear) =>
+        yearGroup.partners.some((p: PartnerRecord) => p.companyId === partner.companyId)
+    ).length + (companyMap[partner.companyId]?.previousYears ?? 0);
 }
+
+export function getPartnerByPartnerRecord(partner: PartnerRecord): Partner {
+    // Get the company details from the companyMap
+    return {
+        ...companyMap[partner.companyId],
+        partnerLevel: partner.partnerLevel
+    };
+}
+

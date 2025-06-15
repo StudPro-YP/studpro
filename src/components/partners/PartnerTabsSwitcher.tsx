@@ -2,10 +2,11 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PartnerTimeline } from "@/components/partners/PartnerTimeline";
-import { partners } from "@/data/partners";
+import { partnersByYear } from "@/data/partners";
 
 export function PartnerTabsSwitcher() {
 	// Group partners by year and get unique versions
+	const partners = partnersByYear;
 	const yearVersionMap: { [key: number]: string } = {};
 	partners.forEach((yearGroup) => {
 		yearVersionMap[yearGroup.year] = yearGroup.version;
