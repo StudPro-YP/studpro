@@ -755,95 +755,141 @@ export const events: StudProVersion[] = [
 			"StudPro 7.0 expanded into mobile development and emerging technologies, keeping pace with industry trends and modern development practices.",
 		eventSeries: [
 			{
-				title: "Mobile and Advanced Development",
-				description: "Cross-platform and TypeScript development",
+				title: "Industry Connect with StudPro",
+				description: "Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
+				"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
 				events: [
 					{
-						title: "React Native Fundamentals",
-						date: "February 8, 2024",
-						time: "10:30 - 14:00",
-						topic: "Cross-Platform Mobile Development",
+						title: "IFS Champions Day",
+						date: "June 28, 2024",
+						time: "9.00 AM Onwards",
+						topic: "",
 						description:
-							"Build mobile apps for iOS and Android with a single codebase.",
-						images: ["/images/events/react-app.jpg"],
+							"IFS Champions Day is a special event organized to celebrate and recognize the winning undergraduates of the " +
+							"Xtream Hackathon. It honors their creativity, innovation, and dedication shown throughout the competition. " +
+							"The event offers a unique opportunity for these young tech talents to connect with industry leaders, explore " +
+							"real-world applications of their skills, and gain valuable insights into the world of enterprise technology and " +
+							"innovation.",
+						images: ["/images/events/7.0/ifs-visit.png"],
 						speaker: {
-							name: "James Martinez",
-							title: "Mobile App Developer",
-							company: "MobileFirst",
+							name: "IFS Team",
+							title: "",
+							company: "Multinational Enterprise Software Company",
 						},
-						venue: "Mobile Innovation Lab, 505 App Street, San Diego, USA",
+						venue: "IFS, Orion City",
 					},
 					{
-						title: "TypeScript for JavaScript Developers",
-						date: "April 15, 2024",
-						time: "13:00 - 16:30",
-						topic: "Type Safety and Advanced TypeScript Features",
+						title: "Dialog Axiata",
+						date: "July 29, 2024",
+						time: "10.00 AM Onwards",
+						topic: "",
 						description:
-							"Enhance your JavaScript applications with TypeScript's robust type system.",
-						images: ["/images/events/javascript-intro.jpg"],
+							"The Dialog Axiata Industry Visit provides undergraduates with a valuable opportunity to explore the operations " +
+							"of a leading telecom and digital service provider. Through guided tours and interactive sessions, students gain " +
+							"insights into industry practices, emerging technologies, and corporate culture. This experience helps bridge " +
+							"academic knowledge with real-world applications, inspiring and preparing students for future careers in tech.",
+						images: ["/images/events/7.0/dialog-visit.png"],
 						speaker: {
-							name: "Anna Kowalski",
-							title: "TypeScript Expert",
-							company: "TypeSafe Solutions",
+							name: "Dialog Axiata Team",
+							title: "",
+							company: "Telecommunications Service Provider",
 						},
-						venue: "Type Academy, 606 Interface Drive, Atlanta, USA",
-					},
-				],
-			},
-			{
-				title: "API and Testing",
-				description: "Modern API design and testing strategies",
-				events: [
-					{
-						title: "GraphQL and Modern APIs",
-						date: "June 22, 2024",
-						time: "09:00 - 12:30",
-						topic: "Building Efficient Data Layers",
-						description: "Design flexible and efficient APIs using GraphQL.",
-						images: ["/images/events/web-development-intro.jpg"],
-						speaker: {
-							name: "Kevin Zhang",
-							title: "API Architect",
-							company: "GraphQL Labs",
-						},
-						venue: "API Center, 707 Query Road, Dallas, USA",
+						venue: "Dialog Axiata, Colombo",
 					},
 					{
-						title: "Testing Strategies",
-						date: "August 29, 2024",
-						time: "14:00 - 17:00",
-						topic: "Unit Testing, Integration Testing, and E2E Testing",
+						title: "SLT Mobitel",
+						date: "August 30, 2024",
+						time: "9.30 AM Onwards",
+						topic: "",
 						description:
-							"Implement comprehensive testing strategies for your applications.",
-						images: ["/images/events/git-version-control.jpg"],
+							"The SLT-Mobitel Industry Visit offers undergraduates a valuable opportunity to explore the operations of " +
+							"Sri Lanka’s national ICT and telecommunications service provider. Through guided tours and expert-led sessions, "  +
+							"students gain insights into cutting-edge technologies, network infrastructure, and industry practices. " +
+							"This experience bridges the gap between theory and practice, preparing students for future careers in the " +
+							"tech and telecom sectors.",
+						images: ["/images/events/7.0/slt-visit.png"],
 						speaker: {
-							name: "Maria Gonzalez",
-							title: "QA Engineer",
-							company: "TestDriven",
+							name: "SLT Data Center Team",
+							title: "",
+							company: "Telecommunications Service Provider",
 						},
-						venue: "Test Labs, 808 Quality Assurance Way, Phoenix, USA",
+						venue: "Dialog Axiata, Colombo",
 					},
-				],
-			},
-			{
-				title: "AI and Web Technologies",
-				description: "Integrating AI into web applications",
-				events: [
 					{
-						title: "AI Integration Workshop",
-						date: "October 16, 2024",
-						time: "10:00 - 15:00",
-						topic: "Integrating AI/ML Models in Web Applications",
+						title: "Virtusa",
+						date: "October 08, 2024",
+						time: "9.30 AM Onwards",
+						topic: "",
 						description:
-							"Learn to incorporate AI capabilities into your web applications.",
-						images: ["/images/events/html-css-basics.jpg"],
+							"The Virtusa Industry Visit offers undergraduates an exciting opportunity to explore the dynamic world of a " +
+							"global IT services and consulting company. Students gain first-hand insights into software development, " +
+							"digital engineering, and real-world project management. Through interactive sessions and expert guidance, " +
+							"the visit bridges academic learning with industry practices, inspiring future professionals in technology and " + 
+							"innovation.",
+						images: ["/images/events/7.0/virtusa-visit.png"],
 						speaker: {
-							name: "Dr. Samuel Lee",
-							title: "AI Research Scientist",
-							company: "AI Innovations",
+							name: "Virtusa Team",
+							title: "",
+							company: "Global IT Services Company",
 						},
-						venue:
-							"AI Research Center, 909 Neural Network Boulevard, Pittsburgh, USA",
+						venue: "Virtusa Sri Lanka, Colombo",
+					},
+					{
+						title: "Zone24x7",
+						date: "December 04, 2024",
+						time: "11.00 AM Onwards",
+						topic: "",
+						description:
+							"The Zone24x7 Industry Visit provides undergraduates with a valuable opportunity to experience the innovative " +
+							"environment of a leading technology company. Students gain insights into cutting-edge solutions in AI, IoT, " +
+							"and software engineering. Through interactive sessions and hands-on exposure, the visit bridges academic " +
+							"knowledge with real-world applications, inspiring students to pursue careers in advanced technology and " +
+							"innovation.",
+						images: ["/images/events/7.0/zone-visit.jpg"],
+						speaker: {
+							name: "Zone24x7 Team",
+							title: "",
+							company: "Global Digital Solutions Provider",
+						},
+						venue: "Zone24x7 Sri Lanka, Colombo",
+					},
+					{
+						title: "Calcey",
+						date: "December 06, 2024",
+						time: "10.00 AM Onwards",
+						topic: "",
+						description:
+							"The Calcey Industry Visit immerses undergraduates in the culture of an award‑winning software product engineering " + 
+							"firm. Participants tour collaborative workspaces, meet engineers driving agile development, and observe live " +
+							"demonstrations of cloud, mobile, and UX projects for global clients. Interactive Q&A sessions reveal career " +
+							"pathways, best practices, and innovation strategies, linking classroom theory to real‑world technology " +
+							"challenges and inspiring future ambitions.",
+						images: ["/images/events/7.0/calcey-visit.jpg"],
+						speaker: {
+							name: "Calcey Team",
+							title: "",
+							company: "Global IT Services Company",
+						},
+						venue: "Trace Expert City, Colombo",
+					},
+					{
+						title: "Codegen International",
+						date: "January 10, 2025",
+						time: "10.00 AM Onwards",
+						topic: "",
+						description:
+							"The CodeGen International Industry Visit immerses undergraduates in a global leader of travel tech and AI " +
+							"innovation. Hosted at their TRACE Expert City headquarters in Colombo, students explore agile software " +
+							"development, reservation systems, and emerging AI-driven solutions. Through guided tours and expert Q&A, " +
+							"they bridge academic theory with real-world industry practices, gain career insights, and get inspired to " +
+							"shape future technology solutions.",
+						images: ["/images/events/7.0/codegen-visit.jpg"],
+						speaker: {
+							name: "CodeGen Team",
+							title: "",
+							company: "Global Travel Technology Solutions Provider",
+						},
+						venue: "Trace Expert City, Colombo",
 					},
 				],
 			},
@@ -856,76 +902,150 @@ export const events: StudProVersion[] = [
 			"The latest StudPro iteration focuses on cutting-edge technologies, scalable architectures, and professional development in the modern tech landscape.",
 		eventSeries: [
 			{
-				title: "Modern Architecture",
+				title: "Forge Your Icon",
 				description:
-					"Advanced frontend architectures and blockchain technologies",
+					"Forge Your Icon is a career development series by IEEE YP Sri Lanka and StudPro, aimed at empowering young " +
+					"professionals with essential skills like LinkedIn mastery, personal branding, and interview success to thrive in " +
+					"today’s job market.",
 				events: [
 					{
-						title: "Micro-frontends Architecture",
-						date: "February 9, 2025",
-						time: "09:30 - 13:00",
-						topic: "Building Scalable Frontend Applications",
+						title: "LinkedIn Mastery",
+						date: "March 22, 2025",
+						time: "7.00 PM Onwards",
+						topic: "Unlock the power of the LinkedIn",
 						description:
-							"Learn how to break down monolithic frontends into smaller, manageable pieces.",
-						images: ["/images/events/react-app.jpg"],
+							"LinkedIn Mastery, the kickoff session of the Forge Your Icon series, successfully took place on 22nd March 2025, " +
+							"featuring esteemed speaker Mr. Amithe Gamage. Attendees gained valuable insights on optimizing their LinkedIn " +
+							"profiles, building professional networks, and leveraging the platform for career growth. The session empowered " +
+							"participants to take their personal branding to the next level.s.",
+						images: ["/images/events/8.0/linkedin-mastery.png"],
 						speaker: {
-							name: "Rachel Green",
-							title: "Principal Frontend Architect",
-							company: "ScaleUp Tech",
+							name: "Mr. Amithe Gamage",
+							title: "Co-Founder",
+							company: "Quantum Leap (Pvt) Ltd",
 						},
-						venue: "Architecture Hall, 1010 Scalable Drive, New York, USA",
+						venue: "Live via Zoom",
 					},
 					{
-						title: "Web3 and Blockchain Basics",
-						date: "April 16, 2025",
-						time: "13:30 - 16:30",
-						topic: "Decentralized Applications and Smart Contracts",
+						title: "CV That Gets You Noticed",
+						date: "April 29, 2025",
+						time: "7.00 PM Onwards",
+						topic: "Crafting a Winning First Impression on Paper",
 						description:
-							"Explore the foundations of blockchain technology and Web3 development.",
-						images: ["/images/events/javascript-intro.jpg"],
+							"The second session of the Forge Your Icon series, CV That Gets You Noticed, was held on 29th April 2025 with " + 
+							"Ms. Sonia ChinnaIyah Thayakaran, CEO of Recruiting By Sonia. As an HR gold medalist, she shared expert " +
+							"strategies on crafting impactful CVs that stand out in competitive job markets. The session offered actionable " +
+							"tips to highlight strengths and secure interview calls.",
+						images: ["/images/events/8.0/cv-get-noticed.png"],
 						speaker: {
-							name: "Chris Anderson",
-							title: "Blockchain Developer",
-							company: "CryptoBuilders",
+							name: "Ms. Sonia ChinnaIyah Thayakaran",
+							title: "CEO and HR Gold Medalist",
+							company: "Recruiting By Sonia",
 						},
 						venue:
-							"Blockchain Center, 1111 Distributed Ledger Lane, San Francisco, USA",
+							"Live via Zoom",
+					},
+					{
+						title: "Personal Branding For Career Growth",
+						date: "May 17, 2025",
+						time: "7.00 PM Onwards",
+						topic: "Crafting a Personal Brand for Career Success",
+						description:
+							"A strong personal brand sets you apart in a competitive job market. In this session, Ms. Shamilka Samaranayake, " +
+							"HR Manager - Talent Acquisition & L&D at Acenture Inc., will share practical insights on how to build and present a compelling professional " +
+							"identity. Learn how to align your strengths, values, and online presence to create lasting impressions and unlock " +
+							"new career opportunities.",
+						images: ["/images/events/8.0/personal-branding.png"],
+						speaker: {
+							name: "Ms. Shamilka Samaranayake",
+							title: "HR Manager - Talent Acquisition & L&D",
+							company: "Acentura Inc.",
+						},
+						venue:
+							"Live via Zoom",
 					},
 				],
 			},
 			{
-				title: "Performance and Cloud",
-				description: "Optimizing web applications and cloud-native development",
+				title: "Industry Connect With StudPro",
+				description: "Industry Connect with StudPro is a platform that links students with industry professionals, offering valuable " +
+				"insights, networking opportunities, and real-world exposure to bridge the gap between academia and the professional world.",
 				events: [
 					{
-						title: "Performance Optimization Masterclass",
-						date: "June 23, 2025",
-						time: "10:00 - 14:00",
-						topic: "Advanced Techniques for High-Performance Web Apps",
+						title: "Cambio Software",
+						date: "April 11, 2025",
+						time: "11.00 AM Onwards",
+						topic: "Industry Exposure through StudPro 8.0",
 						description:
-							"Master techniques to optimize web performance for better user experience.",
-						images: ["/images/events/web-development-intro.jpg"],
+							"As part of the StudPro 8.0 initiative, IEEE Young Professionals Sri Lanka, in collaboration with Cambio " +
+							"Sri Lanka, organized an engaging industry connect session. This visit provided participants with valuable " +
+							"insights into real-world technological innovations and corporate practices, fostering professional growth " +
+							"and inspiration among future tech leaders.",
+						images: ["/images/events/8.0/cambio-visit.jpg"],
 						speaker: {
-							name: "Taylor Smith",
-							title: "Performance Engineer",
-							company: "SpeedDemon",
+							name: "Cambio Software Team",
+							title: "",
+							company: "E-HealthCare Solutions Providers",
 						},
-						venue: "Performance Lab, 1212 Optimization Court, Austin, USA",
+						venue:
+							"Cambio Sri Lanka, Colombo",
 					},
 					{
-						title: "Cloud-Native Development",
-						date: "August 1, 2025",
-						time: "09:00 - 12:30",
-						topic: "Kubernetes, Serverless, and Microservices",
+						title: "Acentura Inc.",
+						date: "April 22, 2025",
+						time: "02.00 PM Onwards",
+						topic: "Industry Exposure through StudPro 8.0",
 						description:
-							"Build resilient, scalable applications using cloud-native approaches.",
-						images: ["/images/events/git-version-control.jpg"],
+							"In StudPro 8.0’s “Industry Connect” session, IEEE Young Professionals Sri Lanka and CINEC Campus welcomed " +
+							"Acentura, a leading digital transformation and SAP-focused technology partner. Participants gained hands-on " +
+							"insights into enterprise software solutions, bridging academic learning with real-world tech practices.",
+						images: ["/images/events/8.0/acentura-visit.png"],
 						speaker: {
-							name: "Jordan Smith",
-							title: "Cloud Solutions Architect",
-							company: "CloudNative Corp",
+							name: "Acentura Team",
+							title: "",
+							company: " Globel Digital Solutions Providers",
 						},
-						venue: "Cloud Computing Center, 1313 Container Road, Seattle, USA",
+						venue:
+							"Acentura Inc, Colombo",
+					},
+					{
+						title: "Altrium Sri Lanka",
+						date: "May 28, 2025",
+						time: "02.00 PM Onwards",
+						topic: "Industry Exposure through StudPro 8.0",
+						description:
+							"As part of StudPro 8.0’s Industry Connect session, IEEE Young Professionals Sri Lanka joined Altrium for an " +
+							"immersive visit. Students experienced Altrium’s vibrant workspace and gained firsthand knowledge about " +
+							"technology-driven corporate culture and innovation practices through direct interaction with industry " +
+							"professionals.",
+						images: ["/images/events/8.0/altrium-visit.png"],
+						speaker: {
+							name: "Altrium Sri Lanka Team",
+							title: "",
+							company: "Global IT Services Company",
+						},
+						venue:
+							"Altrium Sri Lanka, Colombo",
+					},
+					{
+						title: "WSO2 Sri Lanka",
+						date: "June 18, 2025",
+						time: "9.30 PM Onwards",
+						topic: "Industry Exposure through StudPro 8.0",
+						description:
+							"The Industry Connect session with WSO2 as part of StudPro 8.0 was an enriching experience for all participants." + 
+							"Held on 18th June 2025, the visit offered an exclusive look into WSO2’s innovative tech landscape, where students " +
+							"explored real-world applications of API management, integration platforms, and open-source solutions. The " +
+							"session fostered meaningful discussions, hands-on learning, and valuable networking, making it a truly " +
+							"inspiring and insightful journey into the world of enterprise software.",
+						images: ["/images/events/8.0/wso2-visit.png"],
+						speaker: {
+							name: "WSO2 Team",
+							title: "",
+							company: "Enterprise Software & IT Services Providers",
+						},
+						venue:
+							"WSO2 Sri Lanka, Colombo",
 					},
 				],
 			},

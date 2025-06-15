@@ -16,7 +16,7 @@ interface EventCardProps {
 	version?: string;
 }
 
-export function EventCard({ session, version }: EventCardProps) {
+export function 	EventCard({ session, version }: EventCardProps) {
 	const router = useRouter();
 	const autoplayPlugin = useRef(
 		Autoplay({ delay: 4000, stopOnInteraction: false }),
@@ -42,7 +42,7 @@ export function EventCard({ session, version }: EventCardProps) {
 			onClick={handleCardClick}
 		>
 			{session.images && session.images.length > 0 && (
-				<div className="w-full h-[345px] relative overflow-hidden">
+				<div className="w-full h-[350px] relative overflow-hidden">
 					{session.images.length === 1 ? (
 						<Image
 							src={session.images[0]}
