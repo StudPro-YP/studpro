@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { partnersByYear, calculatePartnerYears, getPartnerByPartnerRecord } from "@/data/partners";
+import {
+	partnersByYear,
+	calculatePartnerYears,
+	getPartnerByPartnerRecord,
+} from "@/data/partners";
 import { PartnerCard } from "@/components/partners/PartnerCard";
 
 export const Partners = () => {
@@ -22,8 +26,8 @@ export const Partners = () => {
 	// Sort partners by level (Platinum first, then Gold, then Silver, then Bronze, then partners with no level)
 	const sortedPartners = [...currentPartners].sort(
 		(a, b) =>
-			levelOrder[a.partnerLevel as keyof typeof levelOrder ?? "undefined"] -
-			levelOrder[b.partnerLevel as keyof typeof levelOrder ?? "undefined"],
+			levelOrder[(a.partnerLevel as keyof typeof levelOrder) ?? "undefined"] -
+			levelOrder[(b.partnerLevel as keyof typeof levelOrder) ?? "undefined"],
 	);
 
 	// Check if we have any partners
@@ -62,13 +66,13 @@ export const Partners = () => {
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 							{/* Limited to 12 partners including those with undefined levels */}
 							{limitedPartners.map((partner, index) => {
-								const company = getPartnerByPartnerRecord(partner)
+								const company = getPartnerByPartnerRecord(partner);
 								const years = calculatePartnerYears(partner);
 								return (
 									<div key={`${partner.companyId}-${index}`} className="group">
 										<PartnerCard partner={company} years={years} />
 									</div>
-								)
+								);
 							})}
 						</div>
 					</div>

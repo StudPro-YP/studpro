@@ -1,5 +1,9 @@
 import { PartnerCard } from "./PartnerCard";
-import { calculatePartnerYears, getPartnerByPartnerRecord, PartnersByYear } from "@/data/partners";
+import {
+	calculatePartnerYears,
+	getPartnerByPartnerRecord,
+	PartnersByYear,
+} from "@/data/partners";
 
 interface PartnerTimelineProps {
 	partnersByYear: PartnersByYear[];
@@ -65,12 +69,15 @@ export function PartnerTimeline({
 								})
 								.map((partner, index) => {
 									const years = calculatePartnerYears(partner);
-									const company = getPartnerByPartnerRecord(partner)
+									const company = getPartnerByPartnerRecord(partner);
 									return (
-										<div key={`${partner.companyId}-${index}`} className="group">
+										<div
+											key={`${partner.companyId}-${index}`}
+											className="group"
+										>
 											<PartnerCard partner={company} years={years} />
 										</div>
-									)
+									);
 								})}
 						</div>
 					</div>

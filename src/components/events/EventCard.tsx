@@ -16,7 +16,7 @@ interface EventCardProps {
 	version?: string;
 }
 
-export function 	EventCard({ session, version }: EventCardProps) {
+export function EventCard({ session, version }: EventCardProps) {
 	const router = useRouter();
 	const autoplayPlugin = useRef(
 		Autoplay({ delay: 4000, stopOnInteraction: false }),
