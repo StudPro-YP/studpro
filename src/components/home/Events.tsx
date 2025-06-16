@@ -60,7 +60,7 @@ export const Events = () => {
 				{upcomingEvents.length > 0 && (
 					<div className="w-full max-w-7xl mb-16">
 						<div className="mb-8 text-center ">
-							<h2 className="text-4xl uppercase text-secondary font-bold mb-4">
+							<h2 className="text-4xl uppercase text-secondary font-bold mb-6">
 								Upcoming Events
 							</h2>
 							<p className="text-lg mx-auto text-gray-600">
