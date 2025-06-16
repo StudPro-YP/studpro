@@ -9,7 +9,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
-import { CalendarIcon } from "lucide-react";
+import { BsCalendar } from "react-icons/bs";
 
 interface EventCardProps {
 	session: Event;
@@ -84,7 +84,7 @@ export function EventCard({ session, version }: EventCardProps) {
 							{session.topic}
 						</p>
 						<div className="flex items-center mt-2 text-xs text-primary">
-							<CalendarIcon className="h-3.5 w-3.5 mr-1" />
+							<BsCalendar className="h-3.5 w-3.5 mr-1" />
 							<span>{session.date}</span>
 						</div>
 						{session.description && (

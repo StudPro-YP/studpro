@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { TeamMember } from "@/data/team";
 import { Card } from "@/components/ui/card";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { MdMail, MdPhone } from "react-icons/md";
 import { getSafeTeamImageUrl } from "@/lib/image-utils";
 
 export interface TeamCardProps {
@@ -36,12 +37,12 @@ export const TeamCard = ({ member }: TeamCardProps) => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<Phone size={20} />
+						<MdPhone size={20} />
 					</Link>
 				)}
 				{member.email && (
 					<Link href={member.email} target="_blank" rel="noopener noreferrer">
-						<Mail size={20} />
+						<MdMail size={20} />
 					</Link>
 				)}
 				{member.linkedIn && (
@@ -50,7 +51,7 @@ export const TeamCard = ({ member }: TeamCardProps) => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<Linkedin size={20} />
+						<FaLinkedin size={20} />
 					</Link>
 				)}
 			</div>

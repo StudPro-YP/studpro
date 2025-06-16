@@ -76,7 +76,7 @@ export const WhatWeDo = () => {
 			image: "/images/services/workshop.jpg",
 		},
 		{
-			title: "Ask Me Anything Series",
+			title: "Industry Visits",
 			description:
 				"A series of sessions targeted to get answers for the burning questions of undergraduates and fresh graduates directly from industry professionals.",
 			image: "/images/services/ask-me-anything.jpg",
@@ -102,7 +102,7 @@ export const WhatWeDo = () => {
 						>
 							<div className="px-12 py-16 pt-32 space-y-16 h-full">
 								<div className="space-y-8 ">
-									<h1 className="text-5xl font-bold text-gray-900 leading-tight drop-shadow-xl">
+									<h1 className="text-5xl font-bold text-secondary leading-tight drop-shadow-xl">
 										What We Do
 									</h1>
 									<p className="text-xl text-gray-600 leading-relaxed max-w-lg drop-shadow-xl">

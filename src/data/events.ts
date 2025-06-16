@@ -1007,6 +1007,23 @@ export const events: StudProVersion[] = [
 						venue: "Acentura Inc, Colombo",
 					},
 					{
+						title: "IFS Sri Lanka",
+						date: "May 23, 2025",
+						time: "9.00 AM Onwards",
+						topic: "Industry Exposure through StudPro 8.0",
+						description:
+							"IFS Champions Day 2025 brought together enthusiastic young professionals for an inspiring day of learning, " +
+							"collaboration, and innovation. Organized by IEEE YP Sri Lanka and StudPro in partnership with IFS, the event " +
+							"celebrated future tech leaders and their potential. Thank you to everyone who participated and made it a success!",
+						images: ["/images/events/8.0/ifs-visit.jpg"],
+						speaker: {
+							name: "IFS Team",
+							title: "",
+							company: "Multinational Enterprise Software Company ",
+						},
+						venue: "IFS Sri Lanka, Orion City, Colombo",
+					},
+					{
 						title: "Altrium Sri Lanka",
 						date: "May 28, 2025",
 						time: "02.00 PM Onwards",
@@ -1042,42 +1059,6 @@ export const events: StudProVersion[] = [
 							company: "Enterprise Software & IT Services Providers",
 						},
 						venue: "WSO2 Sri Lanka, Colombo",
-					},
-				],
-			},
-			{
-				title: "Professional Development",
-				description: "Leadership skills and final project showcase",
-				events: [
-					{
-						title: "Leadership in Tech",
-						date: "September 8, 2025",
-						time: "14:00 - 16:30",
-						topic: "Technical Leadership and Team Management",
-						description:
-							"Develop the skills needed to lead technical teams effectively.",
-						images: ["/images/events/html-css-basics.jpg"],
-						speaker: {
-							name: "Dr. Patricia Williams",
-							title: "VP of Engineering",
-							company: "TechLeaders Inc",
-						},
-						venue: "Leadership Forum, 1414 Management Avenue, Boston, USA",
-					},
-					{
-						title: "Final Projects & Networking",
-						date: "October 15, 2025",
-						time: "10:00 - 16:00",
-						topic: "Project Presentations and Industry Networking",
-						description:
-							"Showcase your projects and connect with industry professionals.",
-						images: ["/images/events/react-app.jpg"],
-						speaker: {
-							name: "StudPro Alumni Panel",
-							title: "Various Roles",
-							company: "Industry Partners",
-						},
-						venue: "Conference Center, 1515 Connection Plaza, Chicago, USA",
 					},
 				],
 			},

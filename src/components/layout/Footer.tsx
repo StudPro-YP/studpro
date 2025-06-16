@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const usefulLinks = [
 	{ href: "/", label: "Home" },
@@ -26,15 +26,15 @@ const ieeeLinks = [
 ];
 
 export const FooterSocialLinks = () => (
-	<div className="flex gap-4 items-center justify-center">
+	<div className="flex gap-6 items-start">
 		<Link
 			href="https://www.instagram.com/ieee.studpro/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<Instagram
-				className="text-white hover:text-primary transition-colors"
-				size={24}
+			<FaInstagram
+				className="hover:text-primary transition-colors"
+				size={20}
 			/>
 		</Link>
 		<Link
@@ -42,9 +42,9 @@ export const FooterSocialLinks = () => (
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<Linkedin
-				className="text-white hover:text-primary transition-colors"
-				size={24}
+			<FaLinkedin
+				className="hover:text-primary transition-colors"
+				size={20}
 			/>
 		</Link>
 		<Link
@@ -52,9 +52,9 @@ export const FooterSocialLinks = () => (
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<Facebook
-				className="text-white hover:text-primary transition-colors"
-				size={24}
+			<FaFacebook
+				className="hover:text-primary transition-colors"
+				size={20}
 			/>
 		</Link>
 	</div>
@@ -68,12 +68,12 @@ interface FooterLinksSectionProps {
 
 const FooterLinksSection = ({ title, links }: FooterLinksSectionProps) => (
 	<div className="flex flex-col gap-2 w-48">
-		<h3 className="text-white font-bold uppercase">{title}</h3>
+		<h3 className="font-bold uppercase">{title}</h3>
 		{links.map((link) => (
 			<Link
 				key={link.href}
 				href={link.href}
-				className="text-white hover:text-primary transition-colors"
+				className="hover:text-primary transition-colors"
 			>
 				{link.label}
 			</Link>
@@ -82,16 +82,21 @@ const FooterLinksSection = ({ title, links }: FooterLinksSectionProps) => (
 );
 
 export const Footer = () => (
-	<footer className="row-start-3 flex flex-col gap-10 items-center justify-center w-full bg-secondary">
+	<footer className="row-start-3 shadow-2xl shadow-black/50 bg-white flex flex-col gap-10 items-center justify-center w-full">
 		<div className="flex flex-row justify-around w-full px-16 py-8 mt-8">
-			<div className="flex flex-col gap-6 w-fit">
-				<div className="bg-white p-4 w-fit rounded-lg">
+			<div className="flex flex-col gap-6 max-w-xl ">
+				<div>
 					<Image
 						src="/images/studpro-logo.png"
 						alt="StudPro Logo"
 						height={40}
-						width={200}
+						width={160}
 					/>
+					<p className=" text-sm mt-6 text-justify">
+					IEEE StudPro is a flagship initiative by IEEE Young Professionals Sri Lanka, aimed at empowering undergraduates and 
+					fresh graduates through career-focused events, industry exposure, and skill-building opportunities. It bridges the gap 
+					between academia and the professional world, guiding students on their path to career success.
+					</p>
 				</div>
 				<FooterSocialLinks />
 			</div>
@@ -103,22 +108,22 @@ export const Footer = () => (
 				/>
 				<FooterLinksSection title="IEEE Links" links={ieeeLinks} />
 				<div className="flex flex-col gap-2">
-					<h3 className="text-white font-bold uppercase">Contact Us</h3>
-					<p className="text-white">Tel: +1234567890</p>
-					<p className="text-white">
+					<h3 className="font-bold uppercase">Contact Us</h3>
+					<p className="">Tel: +1234567890</p>
+					<p className="">
 						Email:{" "}
 						<Link
 							className="hover:text-primary transition-colors"
 							href="mailto:studpro@gmail.com"
 						>
-							studpro@gmail.com
+							studpro.ypsl@gmail.com
 						</Link>
 					</p>
 				</div>
 			</div>
 		</div>
-		<div className="py-4 mx-8 border-t border-gray-700 w-full flex justify-center text-gray-300">
-			<p className="text-gray-300">
+		<div className="py-4 mx-8 border-t border-gray-300 w-full flex justify-center">
+			<p>
 				All rights reserved &copy; {new Date().getFullYear()}
 			</p>
 		</div>
