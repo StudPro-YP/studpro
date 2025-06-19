@@ -30,6 +30,8 @@ export default function Home() {
 			{ ref: partnersRef, name: "Partners" },
 		];
 
+		document.body.style.backgroundColor = "#065E86"; // Default background color
+
 		sections.forEach(({ ref, name }, i) => {
 			if (ref.current) {
 				const prevBgColor =
@@ -41,11 +43,11 @@ export default function Home() {
 					onEnter: () => {
 						document.body.style.transition = "background-color 0.5s ease";
 						document.body.style.backgroundColor =
-							ref?.current?.dataset.bgcolor || "#FFFFFF";
+							ref?.current?.dataset.bgcolor || "#065E86";
 					},
 					onLeaveBack: () => {
 						document.body.style.transition = "background-color 0.5s ease";
-						document.body.style.backgroundColor = prevBgColor || "#FFFFFF";
+						document.body.style.backgroundColor = prevBgColor || "#065E86";
 					},
 				});
 				ScrollTrigger.create({
@@ -98,13 +100,13 @@ export default function Home() {
 			<div ref={whatWeDoRef} style={{ opacity: 0 }} data-bgcolor="#FFFFFF">
 				<WhatWeDo />
 			</div>
-			<div ref={eventsRef} data-bgcolor="#FFFFFF">
+			<div ref={eventsRef}  data-bgcolor="#FFFFFF">
 				<Events />
 			</div>
-			<div ref={statsRef} data-bgcolor="#EE7929">
+			<div ref={statsRef} style={{ opacity: 0 }}  data-bgcolor="#EE7929">
 				<Stats />
 			</div>
-			<div ref={partnersRef} data-bgcolor="#FFFFFF">
+			<div ref={partnersRef} style={{ opacity: 0 }}  data-bgcolor="#FFFFFF">
 				<Partners />
 			</div>
 		</LenisWrapper>

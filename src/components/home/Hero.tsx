@@ -30,7 +30,7 @@ export const Hero = () => {
 							bgRef.current.style.transition = "opacity 0.5s ease";
 							bgRef.current.style.opacity = "100";
 						}
-					},
+					}
 				},
 			});
 		}, bgRef);
@@ -41,11 +41,11 @@ export const Hero = () => {
 	return (
 		<main
 			ref={bgRef}
-			className="relative z-0 pt-16 h-[120vh] bg-[url('/images/hero-bg.jpg')] bg-cover bg-center "
-		>
+			className="relative z-0 pt-16 h-[120vh] bg-[url('/images/hero-bg.jpg')] bg-cover bg-center ">
 			<div
+
 				className="absolute inset-0 bg-gradient-to-b from-blue-950/60 z-0 to-secondary/100 "
-				style={{ opacity: 1, transition: "opacity 0.2s" }}
+				style={{opacity: 1, transition: "opacity 0.2s"}}
 			/>
 			<div className="h-screen w-full flex flex-col gap-16 justify-center items-center row-start-2 sm:items-start">
 				<div className="relative z-10 text-center mx-auto space-y-4 text-white">

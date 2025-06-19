@@ -54,7 +54,7 @@ export const Events = () => {
 	}, []);
 
 	return (
-		<div className="min-h-[170vh] flex justify-center items-center">
+		<div className="min-h-[140vh] flex justify-center items-center">
 			<div className="flex flex-col justify-center items-center py-16">
 				{/* Upcoming Events Section */}
 				{upcomingEvents.length > 0 && (

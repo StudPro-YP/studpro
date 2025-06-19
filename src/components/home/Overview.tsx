@@ -1,6 +1,6 @@
 export const Overview = () => {
 	return (
-		<div className="h-screen bg-transparent flex justify-center">
+		<div className="h-[80vh] bg-transparent flex justify-center">
 			<div className="flex flex-row justify-center items-center max-w-5xl gap-16">
 				<div className="flex-1/2 flex flex-col justify-start text-white gap-4 drop-shadow-xl/20">
 					<h1 className="text-6xl font-bold uppercase tracking-wide">Introducing StudPro</h1>
