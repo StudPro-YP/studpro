@@ -32,30 +32,21 @@ export const FooterSocialLinks = () => (
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<FaInstagram
-				className="hover:text-primary transition-colors"
-				size={20}
-			/>
+			<FaInstagram className="hover:text-primary transition-colors" size={20} />
 		</Link>
 		<Link
 			href="https://www.linkedin.com/company/ieee-studpro/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<FaLinkedin
-				className="hover:text-primary transition-colors"
-				size={20}
-			/>
+			<FaLinkedin className="hover:text-primary transition-colors" size={20} />
 		</Link>
 		<Link
 			href="https://www.facebook.com/ieeestudpro/"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<FaFacebook
-				className="hover:text-primary transition-colors"
-				size={20}
-			/>
+			<FaFacebook className="hover:text-primary transition-colors" size={20} />
 		</Link>
 	</div>
 );
@@ -82,25 +73,30 @@ const FooterLinksSection = ({ title, links }: FooterLinksSectionProps) => (
 );
 
 export const Footer = () => (
-	<footer className="row-start-3 shadow-2xl shadow-black/50 bg-white flex flex-col gap-10 items-center justify-center w-full">
-		<div className="flex flex-row justify-around w-full px-16 py-8 mt-8">
-			<div className="flex flex-col gap-6 max-w-xl ">
-				<div>
+	<footer className="row-start-3 shadow-2xl shadow-black/50 bg-white flex flex-col gap-6 md:gap-10 items-center justify-center w-full">
+		<div className="flex flex-col lg:flex-row justify-around w-full px-4 sm:px-6 lg:px-16 py-6 md:py-8 mt-4 md:mt-8 gap-8 lg:gap-0">
+			<div className="flex flex-col gap-4 md:gap-6 max-w-xl">
+				<div className="flex flex-col items-center lg:items-start">
 					<Image
 						src="/images/studpro-logo.png"
 						alt="StudPro Logo"
 						height={40}
 						width={160}
 					/>
-					<p className=" text-sm mt-6 text-justify">
-					IEEE StudPro is a flagship initiative by IEEE Young Professionals Sri Lanka, aimed at empowering undergraduates and 
-					fresh graduates through career-focused events, industry exposure, and skill-building opportunities. It bridges the gap 
-					between academia and the professional world, guiding students on their path to career success.
+					<p className="text-xs md:text-sm mt-4 md:mt-6 text-center lg:text-justify px-4 lg:px-0">
+						IEEE StudPro is a flagship initiative by IEEE Young Professionals
+						Sri Lanka, aimed at empowering undergraduates and fresh graduates
+						through career-focused events, industry exposure, and skill-building
+						opportunities. It bridges the gap between academia and the
+						professional world, guiding students on their path to career
+						success.
 					</p>
 				</div>
-				<FooterSocialLinks />
+				<div className="flex justify-center lg:justify-start">
+					<FooterSocialLinks />
+				</div>
 			</div>
-			<div className="flex gap-12">
+			<div className="flex flex-wrap justify-center md:justify-around gap-8 md:gap-12 px-4">
 				<FooterLinksSection title="Useful Links" links={usefulLinks} />
 				<FooterLinksSection
 					title="National Projects"
@@ -122,8 +118,8 @@ export const Footer = () => (
 				</div>
 			</div>
 		</div>
-		<div className="py-4 mx-8 border-t border-gray-300 w-full flex justify-center">
-			<p>
+		<div className="py-3 md:py-4 mx-4 md:mx-8 border-t border-gray-300 w-full flex justify-center">
+			<p className="text-sm md:text-base text-center">
 				All rights reserved &copy; {new Date().getFullYear()}
 			</p>
 		</div>

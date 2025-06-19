@@ -42,19 +42,18 @@ export const Partners = () => {
 
 	// Limit to 12 partners total
 	const limitedPartners = [...sortedPartners].slice(0, 12);
-
 	return (
 		<div
 			id="partners"
-			className="min-h-screen py-24 flex flex-col justify-center items-center"
+			className="mt-20 min-h-screen py-12 md:py-24 flex flex-col justify-center items-center"
 		>
-			<div className="max-w-6xl mx-auto px-4 w-full">
+			<div className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
 				{" "}
-				<div className="text-center mb-16">
-					<h2 className="text-4xl uppercase font-bold text-secondary mb-6">
+				<div className="text-center mb-8 md:mb-16">
+					<h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold text-secondary mb-4 md:mb-6">
 						Featured Partners
 					</h2>
-					<p className="text-lg text-gray-600 max-w-2xl mx-auto">
+					<p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
 						StudPro proudly partners with industry leaders to provide students
 						with the best learning experience and career opportunities.
 					</p>
@@ -63,7 +62,7 @@ export const Partners = () => {
 				{hasPartners ? (
 					<div>
 						{" "}
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
 							{/* Limited to 12 partners including those with undefined levels */}
 							{limitedPartners.map((partner, index) => {
 								const company = getPartnerByPartnerRecord(partner);
@@ -77,10 +76,10 @@ export const Partners = () => {
 						</div>
 					</div>
 				) : (
-					<div className="text-center py-10">
+					<div className="text-center py-6 md:py-10">
 						<div className="text-secondary mb-4">
 							<svg
-								className="w-16 h-16 mx-auto"
+								className="w-12 h-12 md:w-16 md:h-16 mx-auto"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -101,7 +100,7 @@ export const Partners = () => {
 						</p>
 					</div>
 				)}
-				<div className="text-center mt-16">
+				<div className="text-center mt-8 md:mt-16">
 					<Link href="/partners">
 						<Button
 							variant="default"
