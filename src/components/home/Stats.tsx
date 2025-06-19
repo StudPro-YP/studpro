@@ -15,20 +15,22 @@ export const Stats = () => {
         {type: 'Speakers', value: 16, icon: 'MicVocal'},
     ]
     return (
-        <div className="h-screen flex flex-col justify-center items-center gap-4 bg-transparent">
-            <h3 className="text-2xl font-semibold text-white">We have conducted StudPro for many Years. We ended
+        <div className="h-screen sm:h-[80vh] flex flex-col justify-center items-center gap-4 bg-transparent px-4 sm:px-8">
+            <h3 className="text-xl sm:text-2xl font-semibold text-white text-center">
+                We have conducted StudPro for many Years. We ended
+                <br className="hidden sm:block" />
                 StudPro7.0 with massive numbers.
             </h3>
-            <div className="flex justify-center items-center gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8 w-full max-w-4xl">
                 {statsData.map((stat, index) => (
                     <StatCard
                         key={index}
                         stat={stat}
                         cardStyle={index % 2 === 0 ? 'bg-transparent' : 'bg-white'}
-                        textStyle={index % 2 === 0 ? 'text-white' : 'text-primary'}/>
+                        textStyle={index % 2 === 0 ? 'text-white' : 'text-primary'}
+                    />
                 ))}
             </div>
-
         </div>
     )
 }
