@@ -14,7 +14,7 @@ import { Overview } from "@/components/home/Overview";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-	const heroRef = useRef<HTMLDivElement>(null);
+	/* const heroRef = useRef<HTMLDivElement>(null);
 	const overviewRef = useRef<HTMLDivElement>(null);
 	const whatWeDoRef = useRef<HTMLDivElement>(null);
 	const eventsRef = useRef<HTMLDivElement>(null);
@@ -85,26 +85,26 @@ export default function Home() {
 		});
 
 		return () => ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-	}, []);
+	}, []); */
 
 	return (
 		<LenisWrapper>
-			<div ref={heroRef} className="relative" data-bgcolor="#065E86">
+			<div>
 				<Hero />
 			</div>
-			<div ref={overviewRef} style={{ opacity: 0 }} data-bgcolor="#065E86">
+			<div className="bg-secondary">
 				<Overview />
 			</div>
-			<div ref={whatWeDoRef} style={{ opacity: 0 }} data-bgcolor="#FFFFFF">
+			<div>
 				<WhatWeDo />
 			</div>
-			<div ref={eventsRef} data-bgcolor="#FFFFFF">
+			<div>
 				<Events />
 			</div>
-			<div ref={statsRef} data-bgcolor="#EE7929">
+			<div className="bg-primary">
 				<Stats />
 			</div>
-			<div ref={partnersRef} data-bgcolor="#FFFFFF">
+			<div>
 				<Partners />
 			</div>
 		</LenisWrapper>

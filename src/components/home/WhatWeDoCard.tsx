@@ -9,7 +9,7 @@ export interface WhatWeDoItem {
 
 export const WhatWeDoCard = ({ title, description, image }: WhatWeDoItem) => {
 	return (
-		<Card className="h-full py-4 min-w-[80%] transition-all duration-200 hover:shadow-lg bg-white">
+		<Card className="h-full py-4 min-w-[50%] transition-all duration-200 hover:shadow-lg bg-white">
 			<CardContent>
 				<div className="flex items-start gap-5">
 					<div className="flex-1">
@@ -21,9 +21,9 @@ export const WhatWeDoCard = ({ title, description, image }: WhatWeDoItem) => {
 							<Image
 								src={image}
 								alt={title}
-								width={350}
+								width={700}
 								height={100}
-								className="w-full"
+								className="object-cover w-full"
 							/>
 						</div>
 					</div>
