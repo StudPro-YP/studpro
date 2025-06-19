@@ -4,6 +4,10 @@ import { events } from "@/data/events";
 import { Event, StudProVersion } from "@/data/events";
 import { useState, useEffect } from "react";
 import { EventCard } from "@/components/events/EventCard";
+import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Extended Event interface with additional properties for UI
 interface LatestEvent extends Event {
@@ -53,8 +57,10 @@ export const Events = () => {
 		setLatestEvents(getLatestEvents(events));
 	}, []);
 
+	const [mobileCarouselApi, setMobileCarouselApi] = useState<CarouselApi>();
+
 	return (
-		<div className="py-40 flex justify-center items-center">
+		<div className="py-40 flex justify-center items-center h-[140vh]">
 			<div className="flex flex-col justify-center items-center py-8 md:py-16 px-4 md:px-6 w-full">
 				{/* Latest Events Section */}
 				{latestEvents.length > 0 && (
@@ -64,13 +70,60 @@ export const Events = () => {
 								Latest Events
 							</h2>
 							<p className="text-base md:text-lg mx-auto text-gray-600 px-2">
-								Explore our most recent events where innovation meets
-								inspiration. <br className="hidden md:block" />
-								Catch up with what you missed and stay tuned for more exciting
-								opportunities.
+								Explore our most recent events where innovation meets inspiration. <br className="hidden md:block" />
+								Catch up with what you missed and stay tuned for more exciting opportunities.
 							</p>
 						</div>
-						<div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8 justify-items-center">
+						{/* Mobile Carousel */}
+						<div className="md:hidden">
+							<Carousel
+								opts={{
+									loop: true,
+									align: "center",
+								}}
+								plugins={[
+									Autoplay({
+										delay: 5000,
+										stopOnInteraction: true,
+									}),
+								]}
+								className="w-full items-center"
+								setApi={setMobileCarouselApi}
+							>
+								<CarouselContent className="-ml-2">
+									{latestEvents.map((event, idx) => (
+										<CarouselItem key={`mobile-latest-${idx}`} className="flex justify-center">
+											<EventCard session={event} version={event.versionTitle} />
+										</CarouselItem>
+									))}
+								</CarouselContent>
+								<div className="absolute left-2 top-1/2 -translate-y-1/2 z-10">
+									<Button
+										variant="outline"
+										size="icon"
+										className="h-8 w-8 rounded-full p-0 bg-white/70 backdrop-blur-sm shadow-md"
+										onClick={() => mobileCarouselApi?.scrollPrev()}
+									>
+										<ChevronLeft className="h-4 w-4" />
+										<span className="sr-only">Previous slide</span>
+									</Button>
+								</div>
+								<div className="absolute right-2 top-1/2 -translate-y-1/2 z-10">
+									<Button
+										variant="outline"
+										size="icon"
+										className="h-8 w-8 rounded-full p-0 bg-white/70 backdrop-blur-sm shadow-md"
+										onClick={() => mobileCarouselApi?.scrollNext()}
+									>
+										<ChevronRight className="h-4 w-4" />
+										<span className="sr-only">Next slide</span>
+									</Button>
+								</div>
+							</Carousel>
+						</div>
+
+						{/* Desktop Grid */}
+						<div className="hidden md:grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8 justify-items-center">
 							{latestEvents.map((event, idx) => (
 								<div key={`latest-${idx}`}>
 									<EventCard session={event} version={event.versionTitle} />
