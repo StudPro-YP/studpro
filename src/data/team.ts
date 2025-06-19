@@ -32,7 +32,8 @@ export const teamMembers: TeamMember[] = [
 		name: "Wishma Divyani",
 		role: "Vice Chairperson - Program",
 		email: "mailto:wishmamahavithana@ieee.org",
-		linkedIn: "https://www.linkedin.com/in/janesmith",
+		contactNo: "+94 70 293 8874",
+		linkedIn: "http://www.linkedin.com/in/wishma-mahavithana",
 		contactNo: "+94 70 293 8874",
 	},
 	{

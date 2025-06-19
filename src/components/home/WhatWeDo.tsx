@@ -1,14 +1,9 @@
 "use client";
 
 import {
-	useLayoutEffect,
-	useRef,
 	useState,
-	useCallback,
 	useEffect,
 } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { WhatWeDoCard } from "@/components/home/WhatWeDoCard";
 import {
 	Carousel,
@@ -20,15 +15,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 
-import LenisWrapper from "@/components/layout/LenisWrapper";
-
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
-
 export const WhatWeDo = () => {
-	const containerRef = useRef<HTMLDivElement>(null);
-	const leftContentRef = useRef<HTMLDivElement>(null);
-	const rightContentRef = useRef<HTMLDivElement>(null);
 	const [mobileCarouselApi, setMobileCarouselApi] = useState<CarouselApi>();
 	const [desktopCarouselApi, setDesktopCarouselApi] = useState<CarouselApi>();
 	const [mobileActiveIndex, setMobileActiveIndex] = useState(0);
@@ -58,77 +45,83 @@ export const WhatWeDo = () => {
 		};
 	}, [mobileCarouselApi, desktopCarouselApi]);
 
-	useLayoutEffect(() => {
-		const container = containerRef.current;
-		const rightContent = rightContentRef.current;
-		if (!container || !rightContent) return;
-
-		let totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
-
-		const updateScroll = () => {
-			totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
-			ScrollTrigger.refresh();
-		};
-
-		const pinTrigger = ScrollTrigger.create({
-			trigger: container,
-			start: "top top",
-			end: () => `+=${totalScroll}`,
-			pin: true,
-			pinSpacing: true,
-			anticipatePin: 1,
-			onUpdate: (self) => {
-				const progress = self.progress;
-				const scrollDistance = progress * totalScroll;
-				rightContent.scrollTop = scrollDistance;
-			},
-			onRefresh: (self) => {
-				totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
-				self.vars.end = `+=${totalScroll}`;
-			},
-		});
-
-		const preventScroll = (e: WheelEvent) => {
-			e.preventDefault();
-		};
-		rightContent.addEventListener("wheel", preventScroll, { passive: false });
-
-		const resizeObserver = new ResizeObserver(updateScroll);
-		resizeObserver.observe(rightContent);
-
-		ScrollTrigger.refresh();
-
-		return () => {
-			pinTrigger.kill();
-			rightContent.removeEventListener("wheel", preventScroll);
-			resizeObserver.disconnect();
-		};
-	}, []);
+	// useLayoutEffect(() => {
+	// 	const container = containerRef.current;
+	// 	const rightContent = rightContentRef.current;
+	// 	if (!container || !rightContent) return;
+	//
+	// 	let totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
+	//
+	// 	const updateScroll = () => {
+	// 		totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
+	// 		ScrollTrigger.refresh();
+	// 	};
+	//
+	// 	const pinTrigger = ScrollTrigger.create({
+	// 		trigger: container,
+	// 		start: "top top",
+	// 		end: () => `+=${totalScroll}`,
+	// 		pin: true,
+	// 		pinSpacing: true,
+	// 		anticipatePin: 1,
+	// 		onUpdate: (self) => {
+	// 			const progress = self.progress;
+	// 			const scrollDistance = progress * totalScroll;
+	// 			rightContent.scrollTop = scrollDistance;
+	// 		},
+	// 		onRefresh: (self) => {
+	// 			totalScroll = rightContent.scrollHeight - rightContent.clientHeight;
+	// 			self.vars.end = `+=${totalScroll}`;
+	// 		},
+	// 	});
+	//
+	// 	const preventScroll = (e: WheelEvent) => {
+	// 		e.preventDefault();
+	// 	};
+	// 	rightContent.addEventListener("wheel", preventScroll, { passive: false });
+	//
+	// 	const resizeObserver = new ResizeObserver(updateScroll);
+	// 	resizeObserver.observe(rightContent);
+	//
+	// 	ScrollTrigger.refresh();
+	//
+	// 	return () => {
+	// 		pinTrigger.kill();
+	// 		rightContent.removeEventListener("wheel", preventScroll);
+	// 		resizeObserver.disconnect();
+	// 	};
+	// }, []);
 
 	const services = [
 		{
 			title: "Webinars",
 			description:
 				"Webinars and session series starting from CV writing, personal grooming, facing interview, industry niches and much more.",
-			image: "/images/services/webinar.jpg",
+			image: "/images/services/webinar.png",
 		},
 		{
 			title: "Workshops",
 			description:
 				"Workshops on how to maintain your LinkedIn profile, writing emails, creating CVs and a whole lot more to ensure our candidates are well prepared for the industry.",
-			image: "/images/services/workshop.jpg",
+			image: "/images/services/workshop.png",
 		},
 		{
 			title: "Industry Visits",
 			description:
 				"A series of sessions targeted to get answers for the burning questions of undergraduates and fresh graduates directly from industry professionals.",
-			image: "/images/services/ask-me-anything.jpg",
+			image: "/images/services/visit.png",
 		},
 		{
-			title: "Career Fair",
+			title: "Carrer Guidance",
+			description:
+				"Career guidance sessions to help candidates understand the industry and how to prepare for it, including resume building, interview preparation, and more.",
+			image: "/images/services/career-guidance.png",
+		},
+		{
+			title: "Annual Career Fair",
 			description:
 				"The flagship event of IEEE StudPro, making sure that the candidates who are groomed to a higher level are ready to take their next step with industry giants.",
-			image: "/images/services/career-fair.jpg",
+			image: "/images/services/career-fair.png",
 		},
 	];
 	// Helper function to navigate directly to specific slides
@@ -145,7 +138,7 @@ export const WhatWeDo = () => {
 	};
 
 	return (
-		<div id="about" className="w-full">
+		<div id="about" className="w-full h-screen">
 			<div className="w-full h-full">
 				{/* Mobile view */}
 				<div className="flex flex-col md:hidden h-full px-4 py-12">
@@ -230,7 +223,6 @@ export const WhatWeDo = () => {
 				</div>
 
 				{/* Desktop view */}
-				<LenisWrapper>
 					<div className="hidden md:flex h-full justify-center">
 						{/* Left Side - What We Do Content */}
 						<div className="w-1/3 relative">
@@ -260,7 +252,6 @@ export const WhatWeDo = () => {
 						{/* Right Side - Services List with Carousel */}
 						<div className="w-[34%] bg-gradient-to-br">
 							<div
-								ref={rightContentRef}
 								className="h-full px-6 lg:px-12 pt-32"
 								style={{
 									scrollbarWidth: "none",
@@ -334,7 +325,6 @@ export const WhatWeDo = () => {
 							</div>
 						</div>
 					</div>
-				</LenisWrapper>
 			</div>
 		</div>
 	);

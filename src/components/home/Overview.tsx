@@ -1,6 +1,6 @@
 export const Overview = () => {
 	return (
-		<div className="min-h-[500px] bg-transparent flex justify-center px-4 py-10 md:py-0">
+		<div className="h-[70vh] bg-transparent flex justify-center px-4 py-10 md:py-0">
 			<div className="flex flex-col md:flex-row justify-center items-center max-w-5xl gap-8 md:gap-16 my-auto">
 				<div className="w-full md:flex-1/2 flex flex-col justify-start text-white gap-4 drop-shadow-xl/20">
 					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wide text-center md:text-left">

@@ -14,7 +14,7 @@ import { Overview } from "@/components/home/Overview";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-	/* const heroRef = useRef<HTMLDivElement>(null);
+	const heroRef = useRef<HTMLDivElement>(null);
 	const overviewRef = useRef<HTMLDivElement>(null);
 	const whatWeDoRef = useRef<HTMLDivElement>(null);
 	const eventsRef = useRef<HTMLDivElement>(null);
@@ -22,6 +22,24 @@ export default function Home() {
 	const partnersRef = useRef<HTMLDivElement>(null);
 
 	useLayoutEffect(() => {
+
+		// Disable animation on mobile (e.g., width < 768px)
+		// if (typeof window !== "undefined" && window.innerWidth < 768) {
+		//
+		// 	[overviewRef, whatWeDoRef, eventsRef, statsRef, partnersRef].forEach(ref => {
+		// 		if (ref.current) ref.current.style.opacity = "1";
+		// 	});
+		//
+		// 	overviewRef.current.style.backgroundColor = "#065E86";
+		// 	whatWeDoRef.current.style.backgroundColor = "#FFFFFF";
+		// 	eventsRef.current.style.backgroundColor = "#FFFFFF";
+		// 	statsRef.current.style.backgroundColor = "#EE7929";
+		// 	partnersRef.current.style.backgroundColor = "#FFFFFF";
+		//
+		//
+		// 	return;
+		// }
+
 		const sections = [
 			{ ref: overviewRef, name: "Overview" },
 			{ ref: whatWeDoRef, name: "WhatWeDo" },
@@ -29,6 +47,10 @@ export default function Home() {
 			{ ref: statsRef, name: "Stats" },
 			{ ref: partnersRef, name: "Partners" },
 		];
+
+		document.body.style.backgroundColor = "#065E86"; // Default background color
+
+		ScrollTrigger.refresh();
 
 		sections.forEach(({ ref, name }, i) => {
 			if (ref.current) {
@@ -41,18 +63,7 @@ export default function Home() {
 					onEnter: () => {
 						document.body.style.transition = "background-color 0.5s ease";
 						document.body.style.backgroundColor =
-							ref?.current?.dataset.bgcolor || "#FFFFFF";
-					},
-					onLeaveBack: () => {
-						document.body.style.transition = "background-color 0.5s ease";
-						document.body.style.backgroundColor = prevBgColor || "#FFFFFF";
-					},
-				});
-				ScrollTrigger.create({
-					trigger: ref.current,
-					start: "top 70%",
-					end: "bottom center",
-					onEnter: () => {
+							ref?.current?.dataset.bgcolor || "#065E86";
 						if (ref.current) {
 							console.log(`[ScrollTrigger] onEnter: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
@@ -74,6 +85,8 @@ export default function Home() {
 						}
 					},
 					onLeaveBack: () => {
+						document.body.style.transition = "background-color 0.5s ease";
+						document.body.style.backgroundColor = prevBgColor || "#065E86";
 						if (ref.current) {
 							console.log(`[ScrollTrigger] onLeaveBack: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
@@ -85,26 +98,26 @@ export default function Home() {
 		});
 
 		return () => ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-	}, []); */
+	}, []);
 
 	return (
 		<LenisWrapper>
-			<div>
+			<div ref={heroRef} className="relative" data-bgcolor="#065E86">
 				<Hero />
 			</div>
-			<div className="bg-secondary">
+			<div ref={overviewRef} style={{ opacity: 0 }} data-bgcolor="#065E86">
 				<Overview />
 			</div>
-			<div>
+			<div ref={whatWeDoRef} style={{ opacity: 0 }} data-bgcolor="#FFFFFF">
 				<WhatWeDo />
 			</div>
-			<div>
+			<div ref={eventsRef} style={{ opacity: 0 }}  data-bgcolor="#FFFFFF">
 				<Events />
 			</div>
-			<div className="bg-primary">
+			<div ref={statsRef} style={{ opacity: 0 }}  data-bgcolor="#EE7929">
 				<Stats />
 			</div>
-			<div>
+			<div ref={partnersRef} style={{ opacity: 0 }}  data-bgcolor="#FFFFFF">
 				<Partners />
 			</div>
 		</LenisWrapper>
