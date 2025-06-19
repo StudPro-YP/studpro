@@ -67,9 +67,7 @@ export const Hero = () => {
 						className="w-full sm:w-auto"
 					>
 						<Link
-							href="https://nextjs.org/docs"
-							target="_blank"
-							rel="noopener noreferrer"
+							href="/about-us"
 						>
 							Learn More
 						</Link>
