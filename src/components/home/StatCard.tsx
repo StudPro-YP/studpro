@@ -31,12 +31,11 @@ export const StatCard = ({ stat, cardStyle, textStyle }: StatCardProps) => {
 			)}
 		>
 			<div className="flec items-center justify-center">
-				{stat.icon && 
+				{stat.icon &&
 					(() => {
 						const Icon = iconMap[stat.icon] || Bs.BsAward;
 						return <Icon className={cn("w-12 h-12", textStyle)} />;
-					})()
-				}
+					})()}
 			</div>
 			<div className="flex flex-col">
 				<h3 className={cn("text-2xl font-bold", textStyle)}>{stat.value}+</h3>

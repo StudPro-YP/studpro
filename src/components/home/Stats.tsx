@@ -14,12 +14,12 @@ export const Stats = () => {
 		{ type: "Speakers", value: 16, icon: "MicVocal" },
 	];
 	return (
-		<div className="h-screen flex flex-col justify-center items-center gap-4 bg-transparent">
-			<h3 className="text-2xl font-semibold text-white">
+		<div className="flex flex-col justify-center items-center gap-4 bg-transparent px-4 py-12 md:py-50">
+			<h3 className="text-xl md:text-2xl font-semibold text-white text-center px-2">
 				We have conducted StudPro for many Years. We ended StudPro7.0 with
 				massive numbers.
 			</h3>
-			<div className="flex justify-center items-center gap-4 mt-8">
+			<div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 mt-6 md:mt-8">
 				{statsData.map((stat, index) => (
 					<StatCard
 						key={index}
