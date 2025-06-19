@@ -9,6 +9,12 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
 	{
+		name: "Vismini Amarasinha",
+		role: "YPSL Representative",
+		email: "visminiamarasinha@ieee.org",
+		contactNo: "+94788299423",
+	},
+	{
 		name: "Chamod Dilruk",
 		role: "Chairperson",
 		email: "mailto:chamod.dilruk97@ieee.org",
@@ -44,31 +50,37 @@ export const teamMembers: TeamMember[] = [
 	{
 		name: "Dilshani Ekanayaka",
 		role: "Member Coordinator",
+		contactNo: "+94763304140",
 		email: "mailto:jalendra12014@gmail.com",
 	},
 	{
 		name: "Santhush Kumuditha",
 		role: "Member Coordinator",
+		contactNo: "+94712506252",
 		email: "mailto:santhush.munasinghe@ieee.org",
 	},
 	{
 		name: "Ashwinie Jayamanna",
 		role: "Member Coordinator",
+		contactNo: "+94712522005",
 		email: "mailto:ashwiniejay@ieee.org",
 	},
 	{
 		name: "Sandali Sithumani",
 		role: "Member Coordinator",
+		contactNo: "+94703757159",
 		email: "mailto:sandaliliyanage@ieee.org",
 	},
 	{
 		name: "Tharusha Hemapala",
 		role: "Member Coordinator",
+		contactNo: "+94 71 728 1107",
 		email: "mailto:tharusha.hemapala@ieee.org",
 	},
 	{
 		name: "Dasunika Yapabandara",
 		role: "Member Coordinator",
+		contactNo: "+94741857822",
 		email: "mailto:dasunikayapabandara@ieee.org",
 	},
 	{
@@ -81,16 +93,19 @@ export const teamMembers: TeamMember[] = [
 	{
 		name: "Sajitha Sulakshana",
 		role: "Member Coordinator",
+		contactNo: "+94771410596",
 		email: "mailto:sajitha.ekanayake@ieee.org",
 	},
 	{
 		name: "Dasun Sri Nethmal",
 		role: "Member Coordinator",
+		contactNo: "+94 74 153 0326",
 		email: "mailto:nethmalds@ieee.org",
 	},
 	{
 		name: "Gihan Lahiru",
 		role: "Member Coordinator",
+		contactNo: "+94 77 651 7595",
 		email: "mailto:gihanbimsara2001@gmail.com",
 	},
 ];
