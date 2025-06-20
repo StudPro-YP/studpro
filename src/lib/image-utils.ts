@@ -22,6 +22,7 @@ export function getSafeImageUrl(imagePath: string): string {
 export function getSafeTeamImageUrl(imagePath: string): string {
 	// List of known team images that exist in the public directory
 	const knownTeamImages = [
+		"/images/team/vismini.png",
 		"/images/team/chamod.png",
 		"/images/team/dayantha.png",
 		"/images/team/wishma.png",

@@ -34,7 +34,6 @@ export const teamMembers: TeamMember[] = [
 		email: "mailto:wishmamahavithana@ieee.org",
 		contactNo: "+94 70 293 8874",
 		linkedIn: "http://www.linkedin.com/in/wishma-mahavithana",
-		contactNo: "+94 70 293 8874",
 	},
 	{
 		name: "Dilmith Dewmina",
