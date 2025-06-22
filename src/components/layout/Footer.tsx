@@ -96,7 +96,7 @@ export const Footer = () => (
 					<FooterSocialLinks />
 				</div>
 			</div>
-			<div className="flex flex-wrap justify-center md:justify-around gap-8 md:gap-12 px-4">
+			<div className="flex flex-wrap justify-start sm:justify-center md:justify-around gap-8 md:gap-12 px-4">
 				<FooterLinksSection title="Useful Links" links={usefulLinks} />
 				<FooterLinksSection
 					title="National Projects"

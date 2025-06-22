@@ -106,6 +106,11 @@ export const Header = () => {
 									About Us
 								</Link>
 							</DropdownMenuItem>
+							<DropdownMenuItem asChild>
+								<Link href="/#contact-us" className="w-full cursor-pointer">
+									Contact Us
+								</Link>
+							</DropdownMenuItem>
 						</DropdownMenuContent>
 					</DropdownMenu>
 				</div>
