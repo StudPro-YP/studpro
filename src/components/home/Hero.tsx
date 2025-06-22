@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
@@ -9,12 +9,15 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Hero = () => {
-    const images = [
-        "/images/hero/hero-bg-1.jpg",
-        "/images/hero/hero-bg-2.jpg",
-        "/images/hero/hero-bg-3.jpg",
-        "/images/hero/hero-bg-4.jpg",
-    ]; // Add more if needed
+    const images = useMemo(
+        () => [
+            "/images/hero/hero-bg-1.jpg",
+            "/images/hero/hero-bg-2.jpg",
+            "/images/hero/hero-bg-3.jpg",
+            "/images/hero/hero-bg-4.jpg",
+        ],
+        []
+    );// Add more if needed
 
     const bgRef1 = useRef<HTMLDivElement>(null);
     const bgRef2 = useRef<HTMLDivElement>(null);
@@ -43,7 +46,7 @@ export const Hero = () => {
         }, 5000);
 
         return () => clearInterval(interval);
-    }, [currentImageIndex, activeLayer]);
+    }, [currentImageIndex, activeLayer, images]);
 
     useEffect(() => {
         if (!mainRef.current) return;

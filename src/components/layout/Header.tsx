@@ -69,6 +69,12 @@ export const Header = () => {
 					>
 						About Us
 					</Link>
+					<Link
+						href="/#contact-us"
+						className="hover:text-primary transition-colors"
+					>
+						Contact Us
+					</Link>
 				</div>
 
 				{/* Mobile menu (Shadcn Dropdown) */}
