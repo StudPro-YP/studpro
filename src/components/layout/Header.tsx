@@ -31,7 +31,7 @@ export const Header = () => {
 			className={`fixed top-0 left-0 right-0 flex justify-center mt-4 z-50 transition-all duration-300`}
 		>
 			<nav
-				className={`px-4 md:px-8 lg:px-16 flex justify-between items-center bg-gray-50/65 backdrop-blur rounded-lg shadow-md w-full max-w-[95%] md:max-w-10/12 mx-auto ${isScrolled ? "h-14" : "h-16"} transition-all duration-300 relative z-50`}
+				className={`px-4 md:px-8 lg:px-16 flex justify-between items-center bg-gray-50 backdrop-blur rounded-lg shadow-md w-full max-w-[95%] md:max-w-10/12 mx-auto ${isScrolled ? "h-14" : "h-16"} transition-all duration-300 relative z-50`}
 			>
 				<Link href="/" className="flex items-center">
 					<Image

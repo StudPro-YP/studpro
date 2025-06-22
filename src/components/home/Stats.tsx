@@ -1,4 +1,5 @@
 import { StatCard } from "@/components/home/StatCard";
+import { events, StudProVersion } from "@/data/events";
 
 export interface StatsData {
     type: string;
@@ -7,6 +8,13 @@ export interface StatsData {
 }
 
 export const Stats = () => {
+    // Get the current year and find the most recent version
+    const currentYear = new Date().getFullYear();
+    const previousYear = currentYear - 1;
+    
+    // Find the version from the previous year, or use the last one if not found
+    const latestVersion: StudProVersion = events.find(event => event.year === previousYear) || 
+        events.reduce((latest, current) => current.year > latest.year ? current : latest, events[0]);
 
     const statsData: StatsData[] = [
         {type: 'Universities', value: 21, icon: 'GraduationCap'},
@@ -16,12 +24,11 @@ export const Stats = () => {
     ]
     return (
         <div className="h-screen sm:h-[80vh] flex flex-col justify-center items-center gap-4 bg-transparent px-4 sm:px-8">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white text-center">
-                We have conducted StudPro for many Years. We ended
-                <br className="hidden sm:block" />
-                StudPro7.0 with massive numbers.
+            <h3 className="text-xl sm:text-2xl font-semibold text-white my-16 text-center">
+                <p>We have conducted StudPro for many Years. We ended</p> 
+                <p className="mt-4 text-5xl font-bold">{latestVersion.version} With Massive Numbers.</p>
             </h3>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8 w-full max-w-4xl">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-8 w-full max-w-6xl">
                 {statsData.map((stat, index) => (
                     <StatCard
                         key={index}

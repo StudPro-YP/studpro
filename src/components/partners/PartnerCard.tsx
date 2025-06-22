@@ -25,7 +25,7 @@ export function PartnerCard({ partner, years }: PartnerCardProps) {
 						alt={partner.name}
 						width={180}
 						height={100}
-						className="object-contain max-h-[120px] rounded-md"
+						className="object-contain max-h-[150px] rounded-md"
 					/>
 				</div>
 

@@ -138,7 +138,7 @@ export const WhatWeDo = () => {
 	};
 
 	return (
-		<div id="about" className="w-full h-screen">
+		<div id="about" className="w-full">
 			<div className="w-full h-full">
 				{/* Mobile view */}
 				<div className="flex flex-col md:hidden h-full px-4 py-12">
