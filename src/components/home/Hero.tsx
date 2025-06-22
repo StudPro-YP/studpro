@@ -46,7 +46,7 @@ export const Hero = () => {
     }, [currentImageIndex, activeLayer]);
 
     useEffect(() => {
-        if (!mainRef) return;
+        if (!mainRef.current) return;
 
         const ctx = gsap.context(() => {
             gsap.to(mainRef.current, {
@@ -96,7 +96,7 @@ export const Hero = () => {
             />
 
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 to-secondary/100 z-10"/>
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-950/30 to-secondary/100 z-10"/>
 
             {/* Content */}
             <div
