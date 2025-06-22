@@ -96,7 +96,7 @@ export const Footer = () => (
 					<FooterSocialLinks />
 				</div>
 			</div>
-			<div className="flex flex-wrap justify-center md:justify-around gap-8 md:gap-12 px-4">
+			<div className="flex flex-wrap justify-start sm:justify-center md:justify-around gap-8 md:gap-12 px-4">
 				<FooterLinksSection title="Useful Links" links={usefulLinks} />
 				<FooterLinksSection
 					title="National Projects"
@@ -105,7 +105,14 @@ export const Footer = () => (
 				<FooterLinksSection title="IEEE Links" links={ieeeLinks} />
 				<div className="flex flex-col gap-2">
 					<h3 className="font-bold uppercase">Contact Us</h3>
-					<p className="">Tel: +1234567890</p>
+					<p className="">Tel:{" "}
+						<Link
+							className="hover:text-primary transition-colors"
+							href="tel:+94769409925"
+						>
+							+94 76 940 9925
+						</Link>
+					</p>
 					<p className="">
 						Email:{" "}
 						<Link

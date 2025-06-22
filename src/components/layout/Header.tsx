@@ -69,6 +69,12 @@ export const Header = () => {
 					>
 						About Us
 					</Link>
+					<Link
+						href="/#contact-us"
+						className="hover:text-primary transition-colors"
+					>
+						Contact Us
+					</Link>
 				</div>
 
 				{/* Mobile menu (Shadcn Dropdown) */}
@@ -98,6 +104,11 @@ export const Header = () => {
 							<DropdownMenuItem asChild>
 								<Link href="/about-us" className="w-full cursor-pointer">
 									About Us
+								</Link>
+							</DropdownMenuItem>
+							<DropdownMenuItem asChild>
+								<Link href="/#contact-us" className="w-full cursor-pointer">
+									Contact Us
 								</Link>
 							</DropdownMenuItem>
 						</DropdownMenuContent>

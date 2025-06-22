@@ -10,6 +10,7 @@ import { Partners } from "@/components/home/Partners";
 import LenisWrapper from "@/components/layout/LenisWrapper";
 import { Events } from "@/components/home/Events";
 import { Overview } from "@/components/home/Overview";
+import { ContactUs } from "@/components/home/ContactUs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,25 +21,9 @@ export default function Home() {
 	const eventsRef = useRef<HTMLDivElement>(null);
 	const statsRef = useRef<HTMLDivElement>(null);
 	const partnersRef = useRef<HTMLDivElement>(null);
+	const contactUsRef = useRef<HTMLDivElement>(null);
 
 	useLayoutEffect(() => {
-
-		// Disable animation on mobile (e.g., width < 768px)
-		// if (typeof window !== "undefined" && window.innerWidth < 768) {
-		//
-		// 	[overviewRef, whatWeDoRef, eventsRef, statsRef, partnersRef].forEach(ref => {
-		// 		if (ref.current) ref.current.style.opacity = "1";
-		// 	});
-		//
-		// 	overviewRef.current.style.backgroundColor = "#065E86";
-		// 	whatWeDoRef.current.style.backgroundColor = "#FFFFFF";
-		// 	eventsRef.current.style.backgroundColor = "#FFFFFF";
-		// 	statsRef.current.style.backgroundColor = "#EE7929";
-		// 	partnersRef.current.style.backgroundColor = "#FFFFFF";
-		//
-		//
-		// 	return;
-		// }
 
 		const sections = [
 			{ ref: overviewRef, name: "Overview" },
@@ -46,6 +31,7 @@ export default function Home() {
 			{ ref: eventsRef, name: "Events" },
 			{ ref: statsRef, name: "Stats" },
 			{ ref: partnersRef, name: "Partners" },
+			{ ref: contactUsRef, name: "ContactUs" },
 		];
 
 		document.body.style.backgroundColor = "#065E86"; // Default background color
@@ -65,21 +51,21 @@ export default function Home() {
 						document.body.style.backgroundColor =
 							ref?.current?.dataset.bgcolor || "#065E86";
 						if (ref.current) {
-							console.log(`[ScrollTrigger] onEnter: ${name}`);
+							// console.log(`[ScrollTrigger] onEnter: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
 							ref.current.style.opacity = "1";
 						}
 					},
 					onLeave: () => {
 						if (ref.current) {
-							console.log(`[ScrollTrigger] onLeave: ${name}`);
+							// console.log(`[ScrollTrigger] onLeave: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
 							ref.current.style.opacity = "0";
 						}
 					},
 					onEnterBack: () => {
 						if (ref.current) {
-							console.log(`[ScrollTrigger] onEnterBack: ${name}`);
+							// console.log(`[ScrollTrigger] onEnterBack: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
 							ref.current.style.opacity = "1";
 						}
@@ -88,7 +74,7 @@ export default function Home() {
 						document.body.style.transition = "background-color 0.5s ease";
 						document.body.style.backgroundColor = prevBgColor || "#065E86";
 						if (ref.current) {
-							console.log(`[ScrollTrigger] onLeaveBack: ${name}`);
+							// console.log(`[ScrollTrigger] onLeaveBack: ${name}`);
 							ref.current.style.transition = "opacity 0.5s ease";
 							ref.current.style.opacity = "0";
 						}
@@ -119,6 +105,9 @@ export default function Home() {
 			</div>
 			<div ref={partnersRef} style={{ opacity: 0 }}  data-bgcolor="#FFFFFF">
 				<Partners />
+			</div>
+			<div ref={contactUsRef} style={{ opacity: 0 }}  data-bgcolor="#065E86">
+				<ContactUs />
 			</div>
 		</LenisWrapper>
 	);
