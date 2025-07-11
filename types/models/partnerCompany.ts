@@ -1,7 +1,8 @@
 import mongoose, { Document, ObjectId, Schema } from 'mongoose';
 
 export interface IPartnerCompany extends Document {
-  eventId: string;
+  eventIds: string[];
+  versions?: string[]; // Optional field for versioning
   name: string;
   logo: string;
   website: string;
@@ -15,10 +16,14 @@ export interface IPartnerCompany extends Document {
 }
 
 const PartnerCompanySchema: Schema = new Schema({
-  eventId: {
-    type: String,
+  eventIds: {
+    type: [String],
     required: true,
-    trim: true,
+    default: [],
+  },
+  versions: {
+    type: [String],
+    default: [],
   },
   name: {
     type: String,
